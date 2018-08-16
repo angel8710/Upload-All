@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Ecovision Group ltd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/forms.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script src="jsform/validation.js"></script>
+<script src="jsform/script.js"></script>
+<script>
+$(function () {
+$('#name').keydown(function (e) {
+if (e.shiftKey || e.ctrlKey || e.altKey) {
+e.preventDefault();
+} else {
+var key = e.keyCode;
+if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+e.preventDefault();
+}
+}
+});
+});
+</script>
+</head>
+<body>
+  <div class="header">
+  	 <div class="header_top">
+	        <div class="wrap">
+ <div class="footer">
+			<div class="wrap">
+			  <p class="address"><img src="images/location.png" alt="" /> &nbsp; &nbsp; info@ecovision.co.uk </p> <p class="phone"><img src="images/phone.png" alt="" /> Call Us Now: <span>(000)1234-5678</span></p>
+			 
+		      <div class="clear"></div>
+		</div>	
+	  </div>				
+		 		<div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt="" /></a>
+					</div>	
+									        <!-- main navigation -->
+        <nav id="topnav" role="navigation">
+        <div class="menu-toggle">Menu</div>  
+        	<ul class="srt-menu" id="menu-main-navigation">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+			<li><a href="services.html">What We Do</a>
+				<ul>
+					<li>
+						<a href="#">Pay Monthly Option</a>
+					</li>
+					<li>
+						<a href="#">Pay Monthly Option</a>
+						<ul>
+							<li><a href="#">Pay Monthly Option</a></li>
+							<li><a href="#">Pay Monthly Option</a></li>
+							<li><a href="#">Pay Monthly Option</a></li>
+							<li><a href="#">Pay Monthly Option</a></li>
+							<li><a href="#">Pay Monthly Option</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Pay Monthly Option</a></li>
+					<li><a href="#">menu item 3.4</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="404.html">Our Team</a>
+				<ul>
+					<li><a href="#">Pay Monthly Option</a></li>
+					<li><a href="#">Pay Monthly Option</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="404.html">News</a>
+			</li>
+               <li>
+				<a href="404.html">Work With Us</a>
+			</li>
+            <li>
+				<a href="contact.html">Contacts</a>
+			</li>
+			
+		</ul>     
+		</nav><!-- end main navigation -->						
+	    		 <div class="clear"></div>
+	        </div>
+	    </div>
+  	</div>		
+      <div class="main">
+      	 <div class="contact">
+			<div class="wrap">
+			<!---start-contact---->
+			<div class="section group">				
+				<div class="col span_1_of_3">
+					<div class="contact_info">
+			    	 	<h3>Find Us Here</h3>
+			    	 		<div class="map">
+					   			<iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:0.85em">View Larger Map</a></small>
+					   		</div>
+      				</div>      			
+				</div>				
+				<div class="col span_2_of_3">
+				  <div class="contact-form">
+		<!-- novalidate attribute is only in place to disable HTML5 validation -->
+       
+		<form class="form-horizontal simple-validation" id="frmExample" novalidate>
+         
+			<div class="form-group required " >
+				<label for="name" class="col-sm-2 control-label">Name</label>
+				<div class="col-sm-10">
+					<input type="text" class="textbox" id="name" placeholder="Enter your name" data-title="* Please enter your name - Only Alphabets !">
+				</div>
+			</div>
+
+			
+			<div class="form-group required">
+				<label for="emailaddress" class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="textbox" id="emailaddress" placeholder="Enter email" data-title="* Please enter a valid Email !">
+				</div>
+			</div>
+			<div class="form-group required">
+				<label for="phone" class="col-sm-2 control-label">Phone</label>
+				<div class="col-sm-10">
+					<input type="number" class="textbox" id="phone" placeholder="Enter your phone" data-title="* Phone required - Only numeric values allowed !">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label for="subject" class="col-sm-2 control-label">Subject</label>
+				<div class="col-sm-10">
+					<textarea type="text" class="textbox" id="subject" placeholder="Enter your Message" data-title="Message required"></textarea>
+					
+				</div>
+			</div>
+		
+			<div class="form-group">
+				<label for="terms" class="col-sm-2 control-label required">Terms</label>
+				<div class="col-sm-10">
+					<div class="checkbox">
+						<label>
+							
+							<input type="checkbox" name="checkme" id="terms" class="required" data-title="* You must agree to the terms !"> Check Here												
+						<!-- Large modal -->
+			<div class="form-group">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">What are the Terms and Conditions?</button>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <h2  class="modal-title" id="myModalLabel" style="text-align:center">Hassle Free Boilers Terms and Conditions</h2>
+	
+<p style="text-align:justify;padding:10px">Hassle Free Boilers offers this Web site, including all information, software, products and services available from this Web site or offered as part of or in conjunction with this Web site (the “Web site”), to you, the user, conditioned upon your acceptance of all of the terms, conditions, policies and notices stated here. Hassle Free Boilers reserves the right to make changes to these Terms and Conditions immediately by posting the changed Terms and Conditions in this location. Your continued use of the Web site constitutes your agreement to all such terms, conditions and notices, and any changes to the Terms and Conditions made by Hassle Free Boilers. The term ‘Hassle Free Boilers’ or ‘us’ or ‘we’ refers to the owner of the website. The term ‘you’ refers to the user or viewer of our website.</p>
+
+<b><p style="text-align:justify;padding:10px">The use of this website is subject to the following terms of use:</b> Use the website at your own risk. This website is provided to you “as is,” without warranty of any kind either express or implied. Neither Hassle Free Boilers nor its employees, agents, third-party information providers, merchants, licensors or the like warrant that the Web site or its operation will be accurate, reliable, uninterrupted or error-free. No agent or representative has the authority to create any warranty regarding the Web site on behalf of Hassle Free Boilers. Hassle Free Boilers reserves the right to change or discontinue at any time any aspect or feature of the Web site.</p>
+
+<b><p style="text-align:justify;padding:10px">Exclusion of Liability</b> The content of the pages of this website is for your general information and use only. It is subject to change without notice. Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</p>
+
+<b><p style="text-align:justify;padding:10px">Indemnification</b> Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements. This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions. All trade marks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website. Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense. From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).</p>
+
+<b><p style="text-align:justify;padding:10px">Copyright</b> Except for material in the public domain under United States copyright law, all material contained on the Web site (including all software, HTML code, Java applets, Active X controls and other code) is protected by UK, United States and foreign copyright laws. Except as otherwise expressly provided in these terms and conditions, you may not copy, distribute, transmit, display, perform, reproduce, publish, license, modify, rewrite, create derivative works from, transfer, or sell any material contained on the Web site without the prior consent of the copyright owner. None of the material contained on Hassle Free Boilers may be reverse-engineered, disassembled, decompiled, transcribed, stored in a retrieval system, translated into any language or computer language, retransmitted in any form or by any means (electronic, mechanical, photo reproduction, recordation or otherwise), resold or redistributed without the prior written consent of Hassle Free Boilers. Violation of this provision may result in severe civil and criminal penalties.</p>
+
+<b><p style="text-align:justify;padding:10px">Monthly pricing and promotional offers</b>
+*£570 savings are estimated figures based on installing a new A-rated condensing boiler with a programmer, room thermostat and thermostatic radiator controls (TRVs) in a gas-heated home from an older boiler without controls. Savings will vary depending on the size and thermal performance of your home. Full details here – http://www.energysavingtrust.org.uk/domestic/content/replacing-my-boiler.
+*£400 saving is if the customer converts from a heat only, system or back boiler to a new Vaillant combi boiler. £300 saving on the boiler, £100 saving on the conversion (was £750, now £650).  £19.99 per month based upon a hassle free boiler with a complete service plan with a £1,799 prepayment. It includes all call outs, installation, parts and labour, 24/7 unlimited cover for the full duration.
+*48 hour installation is subject to survey booked and accepted within 24 hours of initial qualification, signed contract returned to us within 24 hours and subject to engineer availability in you area. There is no upfront payment with a monthly plan of £37.99 over 12 years (increasing by 3% a year to cover inflation. If you do not pass the credit check criteria for no upfront payment you may be eligible for other plans. The plan is available to homeowners. £15.64 per month based upon £1,000 deposit on a £1,799 boiler price, financed over 8 years at 10.9% APR.
+All prices per month on finance are based on a 50% deposit over 8 years at 10.98% interest rate, subject to status and terms and include installation. Other terms are available so please ask for full details. Finance provided by Barclays partner finance, a trading name of Clydesdale financial services ltd a wholly owned subsidiary of Barclays Bank Plc. Clydesdale financial services ltd is authorised and regulated by the finacial conduct authority FSRN 311753. registered in England. No. 2901725 Office 1 Churchill place, London E14 5HP .</p>
+
+ <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+        <button type="button" class="btn btn-primary">Close</button>
+</div>   
+ </div>
+  </div>
+    </div>
+      </div>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+    			<div class="col-sm-offset-2 col-sm-10">
+    				<div class="frmPrc hide">
+						<button type="button" class="btn btn-primary" disabled="disabled"><i class="fa fa-spinner fa-spin"></i> Processing</button>
+    				</div>
+    				<div class="frmBtn">
+						<button type="submit" class="btnbootstrap"><i class="fa fa-save"></i> Submit</button>
+						<button type="submit" class="btnbootstrap btn-danger"><i class="fa fa-trash"></i> Delete</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="src/validation.js"></script>
+	<script src="/script.js"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+				  <!--	<h3>Contact Us</h3>
+					    <form method="post" action="contact-post.html">
+					    	<div>
+						    	<span><label>NAME</label></span>
+						    	<span><input name="userName" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>E-MAIL</label></span>
+						    	<span><input name="userEmail" type="text" class="textbox"></span>
+						    </div>						   
+						    <div>
+						    	<span><label>SUBJECT</label></span>
+						    	<span><textarea name="userMsg"> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" class="mybutton" value="Submit"></span>
+						  </div>
+					    </form> -->
+
+				    </div>
+  				</div>				
+			  </div>
+			  </div>
+			<!---End-contact---->
+			<div class="clear"> </div>
+		</div>
+    </div>
+     <div class="copy-right">
+			<div class="wrap">
+			     <p>Company Name © All Rights Reseverd | Design by  <a href="#"></a></p>
+		      <div class="clear"></div>
+		</div>	
+	</div>
+	<script src="mainjs/main.js"></script>
+</body>
+</html>

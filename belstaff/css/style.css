@@ -1,0 +1,371 @@
+
+body {
+Margin: 0;
+    padding: 0;
+    min-width: 100%;
+    overflow-x:hidden;
+	
+ }
+.full-width-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+
+.transparent {
+     opacity: 0.9;
+  filter: alpha(opacity=50);
+}
+	
+
+.img{
+background:url('../img/bg.jpg');
+
+}
+
+#desktop-navigation a,
+		#footer a {
+	color: #e0e0e0 !important;
+}
+@media only screen and (max-width: 480px) {
+			
+			/* Show/hide on Desktop/mobile */
+
+			 .is-mobile {
+				max-height: none !important;
+				font-size: inherit !important;
+				display: block !important;
+				width: 100% !important;
+				display:block !important;
+				overflow: visible !important;
+				float: none !important;
+				height: auto !important;
+			}
+			/* Content wrapper */
+			
+            #logo-wrapper {
+				text-align: center;
+				width: 100%;
+			}
+	
+			/* Collapse table rows into blocks */
+
+		 .rows-collapse tr,
+			.rows-collapse td,
+			.rows-collapse tbody {
+				display: block;
+				text-align: center;
+			}
+			/* Collapse into 2 columns */
+
+		.rows-2-col tr {
+				padding: 0;
+			}
+		.rows-2-col td {
+				float: left;
+				width: 43%;
+				padding: 10px 0;
+			}
+			/* Mobile Nav */
+
+		.mobile-navigation {
+				background: #333436;
+			}
+			.mainnav-link {
+				text-decoration: none;
+				color: white !important;
+				padding: 14px 0;
+				display: block;
+				border-bottom: solid 1px #202020;
+				letter-spacing: 1px;
+			}
+			/* User links (assistance, store finder...) */
+
+			 .layout-userlinks {
+				margin: 10px 0;
+				font-size: 10px;
+			}
+			/* Social media  */
+
+		.layout-social {
+				border-top: solid 1px #202020;
+				width: 367px;
+				float:center;
+			}
+		.layout-social td {
+				float: left;
+				width: 16.6666666666666%;
+				padding: 20px 0;
+			}
+		.layout-social td img {
+				margin: 0 auto !important;
+				width: 30px;
+				height: 30px;
+			}
+			
+		#meta-links a,
+		#header a {
+			color: #000001 !important;
+			display:block;
+			text-align:center;
+			margin:0 auto;
+			padding:0 auto;
+			margin-left:-14em;
+		       }
+		}
+		/* Reset Outlook links for navigation */
+
+		#meta-links a,
+		#header a {
+			color: #000001 !important;
+		}
+
+
+		
+		@media only screen and (max-width: 480) and (min-width: 320px) {
+			
+			/* Show/hide on Desktop/mobile */
+
+			 .is-mobile {
+				max-height: none !important;
+				font-size: inherit !important;
+				display: block !important;
+				width: 100% !important;
+				display:block !important;
+				overflow: visible !important;
+				float: none !important;
+				height: auto !important;
+			}
+			/* Content wrapper */
+			
+            #logo-wrapper {
+				text-align: center;
+				width: 100%;
+			}
+	
+			/* Collapse table rows into blocks */
+
+		 .rows-collapse tr,
+			.rows-collapse td,
+			.rows-collapse tbody {
+				display: block;
+				text-align: center;
+			}
+			/* Collapse into 2 columns */
+
+		.rows-2-col tr {
+				padding: 0;
+			}
+		.rows-2-col td {
+				float: left;
+				width: 50%;
+				padding: 10px 0;
+			}
+			/* Mobile Nav */
+
+		.mobile-navigation {
+				background: #333436;
+			}
+			.mainnav-link {
+				text-decoration: none;
+				color: white !important;
+				padding: 14px 0;
+				display: block;
+				border-bottom: solid 1px #202020;
+				letter-spacing: 1px;
+			}
+			/* User links (assistance, store finder...) */
+
+			 .layout-userlinks {
+				margin: 10px 0;
+				font-size: 10px;
+			}
+			/* Social media  */
+
+		.layout-social {
+				border-top: solid 1px #202020;
+				width: 320px;
+				float:center;
+			}
+		.layout-social td {
+				float: left;
+				width: 16.6666666666666%;
+				padding: 20px 0;
+			}
+		.layout-social td img {
+				margin: 0 auto !important;
+				width: 30px;
+				height: 30px;
+			}
+			
+		#meta-links a,
+		#header a {
+			color: #000001 !important;
+			display:block;
+			text-align:center;
+			margin:0 auto;
+			padding:0 auto;
+			margin-left:-14em;
+		       }
+		}
+		/* Reset Outlook links for navigation */
+
+		#meta-links a,
+		#header a {
+			color: #000001 !important;
+		}
+		
+/***** Media Quries *****/
+@media only screen and (max-width: 480px) {
+    table {
+        width:100%;
+    }
+	
+#small{
+font-family: Helvetica, arial, sans-serif; 
+font-size: 17px; 
+color: #ffffff;
+ padding: 15px 0;
+ }
+	
+
+
+.single-full-width p {
+margin: 0 0 17px 0;
+font-size: 14px;
+line-height: 22px;
+}
+	
+    input[type=text], textarea {
+        width:70%;
+    }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 480px) {
+.full-width-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+    table {
+        width:100%;
+    }
+    input[type=text], textarea {
+        width:75%;
+    }
+
+}
+
+
+@media only screen and (max-width: 520px) and (min-width: 480px) {
+
+}
+
+
+
+}
+
+@media screen and (max-device-width: 600px) {
+    .column {
+        width: auto !important;
+        float: none !important;
+        display: block !important;
+    }
+}
+
+#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+     
+         .image_fix {display:block;}
+         p {margin: 0px 0px !important;}
+         table td {border-collapse: collapse;}
+         table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+         a {color: #33b9ff;text-decoration: none;text-decoration:none!important;}
+		 
+		 
+		  table[class=full] { width: 100%; clear: both; }
+         /*IPAD STYLES*/
+         @media only screen and (max-width: 640px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #0a8cce; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #0a8cce !important;
+         pointer-events: auto;
+         cursor: default;
+		 
+         }
+         table[class=devicewidth] {width: 481px!important;text-align:center!important;}
+         table[class=devicewidthmob] {width: 420px!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 420px!important;text-align:center!important;}
+         img[class=banner] {width: 440px!important;height:157px!important;}
+         img[class=col2img] {width: 440px!important;height:330px!important;}
+         table[class="cols3inner"] {width: 100px!important;}
+         table[class="col3img"] {width: 131px!important;}
+         img[class="col3img"] {width: 131px!important;height: 82px!important;}
+         table[class='removeMobile']{width:10px!important;}
+         img[class="blog"] {width: 420px!important;height: 162px!important;}
+         }
+		 
+		 
+		 @media only screen and (max-width: 480px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #0a8cce; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #0a8cce !important;
+         pointer-events: auto;
+         cursor: default;
+         }
+		 
+         table[class=devicewidth] {width: 490px!important;text-align:center!important;}
+         table[class=devicewidthmob] {width: 450px!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 450px!important;text-align:center!important;}      
+         img[class=col2img] {width: 490px!important;height:330px!important;}
+         table[class="cols3inner"] {width: 100px!important;}
+         table[class="col3img"] {width: 131px!important;}
+         img[class="col3img"] {width: 131px!important;height: 82px!important;}
+         table[class='removeMobile']{width:10px!important;}
+         img[class="blog"] {width: 420px!important;height: 162px!important;}
+         }
+		 
+		 
+
+         /*IPHONE STYLES*/
+         @media only screen and (max-width: 480px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #0a8cce; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #0a8cce !important; 
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 280px!important;text-align:center!important;}
+         table[class=devicewidthmob] {width: 260px!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 260px!important;text-align:center!important;}
+         img[class=banner] {width: 280px!important;height:100px!important;}
+         img[class=col2img] {width: 280px!important;height:210px!important;}
+         table[class="cols3inner"] {width: 260px!important;}
+         img[class="col3img"] {width: 280px!important;height: 175px!important;}
+         table[class="col3img"] {width: 280px!important;}
+         img[class="blog"] {width: 260px!important;height: 100px!important;}
+         td[class="padding-top-right15"]{padding:15px 15px 0 0 !important;}
+         td[class="padding-right15"]{padding-right:15px !important;}
+		 
+         }
+

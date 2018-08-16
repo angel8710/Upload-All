@@ -1,0 +1,10 @@
+.required label,
+label.required{
+	font-weight:bold;
+}
+.required label:before,
+label.required:before{
+	color:#c00;
+	content:"* ";
+	font-size: 18px;
+}

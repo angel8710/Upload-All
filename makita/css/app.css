@@ -1,0 +1,215 @@
+
+.Slide_Info {
+    position: absolute;
+    top: 105px;
+	font-size: 1em;
+	display:block;
+    margin-left: 18em;
+    width: 100%;
+	margin-left: 5em;
+}
+
+.Slide_Info h4 {
+    font-size: 24px;
+	margin-left: 2em;
+    margin: 0;
+    color: #000;
+}
+
+.Slide_Info span {
+    padding: 7px 10px;
+	color:#fff;
+	margin-left: -1em;
+    margin-top: 10em;
+   background: rgba(25,215,255,.6);
+}
+
+.Slide_Info p {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+}
+
+
+/*body {
+    margin: 0;
+    font-family: "Times New Roman";
+    color: #4c4c4c;
+    background: #F8F8F8;
+}
+
+.header {
+    display: block;
+    margin-bottom: 50px;
+    overflow: hidden;
+    background: white;
+}
+
+.header h1 {
+    margin: 0 0 20px;
+    padding: 50px;
+    background: #333;
+    color: white;
+    font-size: 55px;
+    font-weight: 300;
+
+}
+
+.header_Nav {
+    padding-bottom: 20px;
+}
+
+.header_Nav a {
+    margin: 0 7px;
+    padding-bottom: 3px;
+    color: #333;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.mainContainer {
+    display: block;
+    width: 1000px;
+    margin: auto;
+}
+
+.article {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 40px;
+    background: white;
+}
+
+.article-text {
+    padding: 30px;
+}
+
+.article-text h2 {
+    margin: 0 0 10px;
+    font-size: 27px;
+    color: #666666;
+}
+
+.article-text p {
+    color: #666666;
+}
+
+.articleExpand {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    display: inline-block;
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+.slider {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide {
+    position: relative;
+}
+
+.slider img {
+    float: left;
+}
+
+.Slide_Info {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 100%;
+}
+
+.Slide_Info h4 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+
+.Slide_Info span {
+    padding: 7px 10px;
+    background: #413D3B;
+}
+
+.Slide_Info p {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    background: #413D3B;
+    font-size: 12px;
+    color: white;
+}
+
+.articleGallery {
+    display: block;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.articleGallery a {
+    position: relative;
+    width: 33.3%;
+    background: #333;
+}
+
+
+
+.footer {
+    display: block;
+    overflow: hidden;
+    margin-top: 50px;
+    padding: 30px;
+    background: #F1F1F1;
+}
+
+.footer a, .footer span, .footer p {
+    font-size: 13px;
+    color: #333333;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-inner {
+    width: 1000px;
+    margin: auto;
+}
+
+.left {
+    float: left;
+}
+
+.footer .left {
+    width: 25%;
+}
+
+.footer h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input[type="email"] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 30px;
+    width: 70% !important;
+}
+
+input[type="submit"] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 30px;
+    width: 25% !important;
+}*/

@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Online PC Store catalog</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+<meta charset="utf-8">
+<link rel="shortcut icon" href="./img/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="sty/stylezero.css">
+<link type="text/css" rel="stylesheet" href="styles/styles.css">
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script src="jsA/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jsA/jquery.jcarousel.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jsA/functions.js" type="text/javascript" charset="utf-8"></script>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="/js/jquery.site.js"></script>
+<link rel="stylesheet" href="http://www.designchemical.com/css/dcsmt.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://www.designchemical.com/blog/wp-content/themes/dc2011/dcsmt/js/jquery.social.media.tabs.1.7.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	
+	$('#social-tabs').dcSocialTabs({
+						widgets: 'fblike,twitter,fbrec,google,rss',
+						rssId: 'http://feeds.feedburner.com/DesignChemical',
+						twitterId: 'designchemical',
+						fblikeId: '157969574262873',
+						fbrecId: 'http://www.designchemical.com',
+						googleId: '111470071138275408587',
+						twitter: {
+							title: 'Twitter'
+						},
+						fblike: {
+							limit: 16
+						},
+						google: {
+							header: 0,
+							api_key: 'AIzaSyCsugGErGFtT5mGKH51DLqvZJTQx2ggypQ'
+						},
+						rss: {
+							title: 'Updates'
+						},
+						width: 260,
+						height: 380,
+						method: 'static',
+imagePath: 'http://www.designchemical.com/blog/wp-content/themes/dc2011/dcsmt/images/icons/'						
+					});
+});
+</script>
+
+<script>
+$(document).ready(function () {
+  $('#sidebar > li > a').click(function(e){
+     if ($(this).attr('class') != 'active'){
+       $('#sidebar li ul').slideUp();
+	   $(this).next().slideToggle();
+	   $('#sidebar li a').removeClass('active');
+	   $(this).addClass('active');
+	 }
+	 e.preventDefault();
+  });
+});
+</script>
+
+<SCRIPT language=javascript type=text/javascript>
+	function init() {
+		if (TransMenu.isSupported()) {
+
+			TransMenu.initialize();
+
+			products.onactivate = function() { document.getElementById("products").className = "hover"; };
+			products.ondeactivate = function() { document.getElementById("products").className = ""; };
+
+			menu2.onactivate = function() { document.getElementById("support").className = "hover"; };
+			menu2.ondeactivate = function() { document.getElementById("support").className = ""; };
+
+			menu3.onactivate = function() { document.getElementById("media").className = "hover"; };
+			menu3.ondeactivate = function() { document.getElementById("media").className = ""; };
+			
+			menu4.onactivate = function() { document.getElementById("entproducts").className = "hover"; };
+			menu4.ondeactivate = function() { document.getElementById("entproducts").className = ""; };			
+			}
+		}
+</SCRIPT>
+<script src="jq/jsinput.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="shell">
+<div id="container">
+<div id="header">
+<div class="links">
+                    <div id="links">
+                        <div style="width: 285px; margin-left: 96px;">
+                           <a href="index.html" class="button">Registration </a> &nbsp;
+                            <a href="order.html" class="button">Log In </a> &nbsp;
+                            <a href="contacts.html" class="button">Contacts</a>
+                        </div>
+                        
+                        <div class="right"  style="margin-right:20px; margin-top: 11px; margin-left: 150px;">
+                            <a href="http://www.yavor.bg/lang/bg" class="lang"><img src="./img/bg1.jpg" alt="Български"></a>
+                            <a href="http://www.yavor.bg/lang/ru" class="lang"><img src="./img/ru.jpg" alt="Руский"></a>
+							<a href="http://www.yavor.bg/lang/ru" class="lang"><img src="./img/en.jpg" alt="English"></a>
+							
+                        </div>
+                    </div>
+                </div>
+<div>
+<h1 id="logo">
+
+<a title="index" href="#">PC Store </a>
+<div id="log">
+<img src="./img/pclogo.png" style="margin-top:-123px;" alt="logo" title="">
+</div>
+</h1>
+<form id="searchform" name="searchform" method="get" action="index.html">
+      <div class="fieldcontainer">
+        <input type="text" name="s" id="s" class="searchfield" placeholder="Search..." tabindex="1">
+        <input type="submit" name="searchbtn" id="searchbtn" value=""> 
+      </div><!-- @end .fieldcontainer -->
+    </form>
+</div>
+
+</div>
+<br>
+<br>
+<br>
+<nav>
+<ul div id="novo">
+<li><a href="index.html">Home</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="#">Service</a></li>
+<li><a href="#">Category</a></li>
+<li><a href="#">Sector</a></li>
+<li><a href="#">About us</a></li>
+<li><a href="contacts.html">Contact</a></li>
+</ul>
+</nav>
+<div id="content">
+     <h2 class="dheadtext">Review Computers</h2>
+	    <div class="right-box">
+	
+  <div class="product-image">
+	<a href="javascript:popImage('./img/budget_pc.jpg','Some Title')" title="">
+        <img  src="./img/budget_pc.jpg" alt="Спалня с размери 200 x 170 (цвят на дървото череша Маверик)" width="230" height="200">
+       </a>
+		<div class="right-wall">
+		<h2 class="description">Комлект маса и 4 сгъваеми стола JX-001</h2>
+		<div class="description"> комплект за хранене - маса и четири сгъвами стола, метална основа </div>
+		<div class="price">Цена: <span class="price-old">199.00 $</span></div>
+            </div>
+	   <br><br>
+	   <a href="javascript:popImage('img/bedroomm00.jpg','Some Title')" title="">
+	   <div class="thumbs">
+	   <a href="javascript:popImage('img/bedroomm00.jpg','Some Title')" title="header=[Thumb1] body=[&nbsp;] fade=[on]">
+	   <img src="./img/bedroomm00.jpg" alt="" border="0" width="60" height="50"></a> 
+	   
+	    <a href="javascript:popImage('img/bedroomm00.jpg','Some Title')" title="header=[Thumb2] body=[&nbsp;] fade=[on]">
+	   <img src="./img/bedroomm00.jpg" alt="" border="0" width="60" height="50"></a> 
+	   
+	    <a href="javascript:popImage('img/banerrs02.jpg','Some Title')" title="header=[Thumb3] body=[&nbsp;] fade=[on]">
+	   <img src="./img/banerrs02.jpg" alt="" border="0" width="60" height="50"></a> 
+	   
+	   <a href="javascript:popImage('img/bedroomm00.jpg','Some Title')" title="header=[Thumb4] body=[&nbsp;] fade=[on]">
+	   <img src="./img/bedroomm00.jpg" alt="" border="0" width="60" height="50"></a> 
+	   
+	   <a href="javascript:popImage('img/bedroomm00.jpg','Some Title')" title="header=[Thumb5] body=[&nbsp;] fade=[on]">
+	   <img src="./img/bedroomm00.jpg" alt="" border="0" width="60" height="50"></a> 
+	   
+	   <a href="javascript:popImage('img/bedroomm00.jpg','Some Title')" title="header=[Thumb6] body=[&nbsp;] fade=[on]">
+	   <img src="./img/bedroomm00.jpg" alt="" border="0" width="60" height="50"></a> 
+	   
+	   <a href="javascript:popImage('img/bedroomm00.jpg','Some Title')" title="header=[Thumb7] body=[&nbsp;] fade=[on]">
+	   <img src="./img/bedroomm00.jpg" alt="" border="0" width="60" height="50"></a> 
+</a>
+	   </div>
+             </div>
+	</div>
+</div>
+
+<br>
+<div id="sidebar" >
+</br>
+</br>
+<div id="category" style="border:1px;">
+<div class="cat">Category</div>
+</div>
+</br>
+<nav>
+       <ul id="sidebar" class="clearfix" >
+		 <li><a href="#" title="About"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Laptops & Notebooks</a>
+<ul>
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Asus</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Acer</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>HP</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Lenovo</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Toshiba</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Dell</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Sony</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Apple</a></li> 
+</ul>
+		 </li>
+        <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Monitors</a>
+		<ul>
+		<li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Acer</a></li>
+		<li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>AOC</a></li>
+		<li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Asus</a></li>
+	    <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>BenQ</a></li>
+		<li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Dell</a></li>
+		<li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Eizo</a></li>
+		<li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Fujitsu</a></li>
+		<li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Packard Bell</a></li>
+		<li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Samsung</a></li>
+	    <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Philips</a></li> 
+		 </ul>
+</li>
+		 <li><a href="#" title="About"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Perapheral Devices</a>
+<ul>
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Mouse</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>PC mics</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>PC sounds</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Game controlers</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>TV tuners</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Fiber device</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Web controlers</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>PC saround</a></li> 
+		 <li><a href="#" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Keyboard</a></li> 
+		 <li><a href="#" title="Blog"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Motherboards</a></li>
+		 <li><a href="#" title="Blog"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Processors</a></li>
+		 <li><a href="#" title="Blog"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Memory RAM</a></li>
+		 <li><a href="#" title="Blog"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Hard Drive</a></li>
+         <li><a href="#" title="Support"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Cameras</a></li>
+		 <li><a href="#" title="Contac"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>MP3 Players</a></li>   
+</ul>
+		 </li>
+         <li><a href="view_article.html" title="Blog"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Computers</a>
+<ul>
+         <li><a href="view_article.html" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Acer</a>
+         <li><a href="view_article.html" title="Support"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Apple</a></li>
+		 <li><a href="view_article.html" title="Contac"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Asus</a></li>
+         <li><a href="view_article.html" title="Favourite"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Dell</a></li>
+		 </ul>
+</li>
+		 <li><a href="#" title="Blog"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Software</a>
+<ul>
+         <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Microsoft Windows 7 Home</a>
+         <li><a href="#" title="Support"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Microsoft Windows 7 Professional Edition</a></li>
+		 <li><a href="#" title="Contac"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Microsoft Windows 7 Premium Edition</a></li>
+		 </ul>
+</li>
+         <li><a href="#" title="Blog"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Printer & Scaners</a>
+<ul>
+         <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Laser printer</a>
+         <li><a href="#" title="Support"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Usual printer</a></li>
+		 <li><a href="#" title="Contac"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Photo printer</a></li>
+		 		 <li><a href="#" title="Contac"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Scaner</a></li>
+		 </ul>
+</li>
+<li><a href="#" title="Blog"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Game Consoles</a>
+<ul>
+         <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Blizzard</a></li>
+		 <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Microsoft</a></li>
+		  <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>PC </a></li>
+		  <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>PSVITA</a></li>
+		  <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>PS3</a></li>
+		  <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>PS4</a></li>
+		  <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>PSP</a></li>
+		  <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>SonyWII</a></li>
+		  <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Platforms</a></li>
+		  <li><a href="#" title="Products"><img src="./img/arrow.png" style="margin-left:5px;padding-right: 10px;"/>Nintendo Wii</a></li>
+		  <li><a href
