@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "question": "What is Salmon about?",
+      "id": 1
+    },{
+      "question": "question",
+      "id": "Building great sites for our amazing clients. Simple."
+    },{
+      "question": "0",
+      "id": "0"
+    }
+  ],
+  
+  "obj": {
+    "number": 1.2345e-6,
+    "enabled": true
+  },
+  "message": "Strings have to be in double-quotes."
+}

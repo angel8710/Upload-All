@@ -1,0 +1,164 @@
+﻿<style type="text/css">
+
+
+
+
+
+.header_menu {
+background: url(images/bg_content_top.png) center bottom no-repeat;
+position: relative;
+z-index: 2;
+}
+
+
+
+
+
+
+
+.header_menu .container {
+height: 63px;
+}
+
+
+
+
+
+
+.container {
+width: 992px;
+margin: 0 auto;
+}
+
+
+
+
+.topmenu {
+height: 54px;
+padding: 9px 7px 0 7px;
+position: relative;
+}
+
+
+
+
+.topmenu .dropdown {
+font-family: 'CartoGothicStdBold', Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 54px;
+color: #325b7b;
+z-index: 1300;
+margin: 0;
+padding: 0;
+text-shadow: 1px 2px 1px #fff;
+}
+
+
+
+
+
+.category {
+	width:222px;
+	padding:0px 0px 0px 0px;
+	float:left;
+	min-height:100px;
+	background-image:url(../images/left_bg.gif);
+	background-repeat:repeat-y;
+	background-position:top;
+	margin-bottom:10px;
+}
+.category h5{
+	float:left;
+	padding:10px 0px 5px 10px;
+	color:#666666;
+}
+
+.glossymenu{
+	margin: 0px;
+	padding: 0;
+	width: 220px;
+	float:left;
+}
+
+.glossymenu a.menuitem{	
+	color: #666;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 6px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	width:208px;
+	height:16px;
+	background-image:url(../images/left_cat_bg.gif);
+	background-repeat:repeat-x;
+	margin-left:1px;
+}
+
+
+.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+	color: #666;
+}
+
+.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	border: none;
+}
+
+.glossymenu a.menuitem:hover{
+	background-image: url(images/left_cat_bg1.gif) !important;
+}
+
+.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+}
+
+.glossymenu div.submenu ul{ /*UL of each sub menu*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	width:208px;
+	margin-left:1px;
+}
+
+.glossymenu div.submenu ul li{
+	color: #666;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 6px 0;
+	text-decoration: none;
+	width:218px;
+	height:16px;
+	background-image:url(../images/left_cat_bg.gif);
+	background-repeat:repeat-x;
+}
+
+.glossymenu div.submenu ul li a{
+	color: #666;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 4px 0;
+	padding-left: 25px;
+	text-decoration: none;
+	background-image:url(../images/cat_arow.gif);
+	background-position:10px 6px;
+	background-repeat:no-repeat;
+}
+
+.glossymenu div.submenu ul li a:hover{
+	color:#3b9fd5;
+	text-decoration:underline;
+}
+/*
+
+
+
+
+
+
+
+
+</style>

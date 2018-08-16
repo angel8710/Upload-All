@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+   <title>Salmon test: [Angel Zhelyazkov]</title>
+  <link rel="icon" href="./img/test.png" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+    <script data-require="jquery@2.1.1" data-semver="1.9.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="example.js"></script>
+    <script src="question2.js"></script>
+	<script src="question3.js"></script>
+
+
+
+</head>
+
+<body>
+
+ <div id="content">
+  <div class="boxlarge">
+           
+<!-- Accordion -->
+<dl class="accordion">
+	  <dt id="get-data">Q: What is Salmon about?</dt>
+		<dd>
+		<table>
+		<tr>
+		<td><div id="show-data"></div></td>
+		</tr>
+		</table>
+		</dd>
+	  
+	  
+	  <dt id="get-data-question2"> Q: What is the location of Salmon Watford?</dt>
+		<dd>
+			<table>
+		<tr>
+		<td><div id="show-data-question2"></div></td>
+		</tr>
+		</table>
+		</dd>
+	  
+	  
+	  <dt id="get-data-question3">Q: Is this the last question?</dt>
+		<dd>
+		<table>
+		<tr>
+		<td><div id="show-data-question3"></div></td>
+		</tr>
+		</table>
+		</dd>
+</dl>
+
+</div>
+<script>
+$(function () {
+
+    $(".accordion").SimpleAccordion();  
+
+});
+
+</script>
+
+     
+
+	
+<!--<input type = "button" id = "driver" class="button" value = "Load JSon Data" />-->
+          
+</div> <!-- Wrapper -->
+<div class="clerfix"></div>
+	<hr style='background-color:#fff; width:80%'>		
+	<div id='footer'>
+	<p style="text-align:center;margin:0 auto;">Plunker</p>
+	</div>
+
+</body>
+</html>
+ 

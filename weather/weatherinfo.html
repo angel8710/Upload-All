@@ -1,0 +1,33 @@
+<div>
+ <h3>Location : {{weatherData.location}}</h3>
+ <h3>Name : {{weatherData.name}}</h3>
+ <h3>Temperature : {{weatherData.temp_c}} K</h3>
+ <h3>Pressure : {{weatherData.pressure_mb}} mBar</h3>
+ <h3>Wind : {{weatherData.wind_kph}} km/h</h3>
+ <h3>Humidity : {{weatherData.humidity}} %</h3>
+ <h3>Feelslike : {{weatherDat.feelslike_c}} </h3>
+</div>
+<div>
+ <table ng-show="historicalInfo">
+ <caption>
+ <h3>Historical Data</h3>
+ </caption>
+ 
+ <tr ng-show="weatherData">
+ <th>Time</th>
+ <th>Temperature (K)</th>
+ <th>Pressure (mBar)</th>
+ <th>Wind (km/h)</th>
+ <th>Humidity (%)</th>
+ </tr>
+ <tr>
+ </tr>
+ <tr ng-repeat="info in historicalInfo">
+ <td>{{info.dt*1000 | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+ <td>{{info.main.temp}}</td>
+ <td>{{info.main.pressure}}</td>
+ <td>{{info.main.wind}}</td>
+ <td>{{info.main.humidity}}</td>
+ </tr>
+ </table>
+</div>

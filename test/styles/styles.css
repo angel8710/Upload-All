@@ -1,0 +1,120 @@
+
+
+
+
+
+/** search input **/
+#searchform, #searchform2 {
+  display: block;
+  margin-bottom: 15px;
+  margin-left: -28px;
+  margin-top:-40px;
+}
+
+.fieldcontainer {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.searchfield {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 45%;
+  padding: 11px 7px;
+  padding-right: 43px;
+  background-color: #fff;
+  font-size: 1.6em;
+  color: #ccc;
+  border: 1px solid #c8c8c8;
+  border-bottom-color: #d2e2e7;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #23a600;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #23a600;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #23a600;  
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.searchfield:focus {
+  width: 100%;
+  color: #666;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 6px #23a600;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 6px #23a600;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 6px #23a600;
+}
+
+#searchbtn {
+  position: absolute;
+  right: 520px;
+  top: 5px;
+  height: 32px;
+  width: 32px;
+  border: 0;
+  cursor: pointer;
+  zoom: 1;
+	filter: alpha(opacity=65);
+	opacity: 0.65;
+  background: transparent url('../images/search.png') top left no-repeat;
+  /* Icon credits to Brightmix http://www.iconfinder.com/icondetails/43272/128/find_loop_magnify_monotone_search_zoom_icon */
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+#searchbtn:hover, #searchbtn:focus, #search2btn:hover, #search2btn:focus {
+	filter: alpha(opacity=90);
+	opacity: 0.9;  
+}
+.searchfield:focus + #searchbtn {
+  right: 10px; /* adjust btn position as the field expands */
+}
+
+/** JS animated input **/
+.searchfieldjs {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 45%;
+  padding: 11px 7px;
+  padding-right: 43px;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  color: #ccc;
+  font-size: 1.6em;
+  border-bottom-color: #d2e2e7;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #23a600;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #23a600;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #23a600;
+}
+.searchfieldjs:focus {
+  color: #666;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 6px #1d8002;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 6px #1d8002;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 6px #1d8002;
+  
+}
+
+#search2btn {
+  position: absolute;
+  right: 360px;
+  top: 5px;
+  height: 32px;
+  width: 32px;
+  border: 0;
+  cursor: pointer;
+  zoom: 1;
+	filter: alpha(opacity=65);
+	opacity: 0.65;
+  background: transparent url('../images/search.png') top left no-repeat;
+  /* Icon credits to Brightmix http://www.iconfinder.com/icondetails/43272/128/find_loop_magnify_monotone_search_zoom_icon */
+}

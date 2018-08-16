@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "question": "Is this the last question?",
+      "id": 3
+    },{
+      "question": "answer",
+      "id": "Yes. You have done well!"
+    },{
+      "question": "3",
+      "id": "3"
+    }
+  ],
+  
+  "obj": {
+    "number": 1.2345e-6,
+    "enabled": true
+  },
+  "message": "Strings have to be in double-quotes."
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather App</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="./img/test.png" type="image/x-icon" />
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script data-require="angular.js@*" data-semver="1.2.21" src="https://code.angularjs.org/1.2.21/angular.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/app.js"></script>
+
+  </head>
+<body  ng-app="WeatherApp">
+<div ng-controller="WeatherController">
+<div id="input">
+     				
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="well search-result">
+            	<div class="row">
+            		<a href="#">
+                		<div class="col-md-12">
+	                    	<img class="img-responsive" style='text-align:center; margin: 0 auto;' src="./img/meteo.png" alt="">
+                		</div>
+                	
+            		</a>
+            	</div>
+            </div> 
+</div>
+
+		<div>
+   <h3>{{info}}</h3>
+   
+
+  </div>
+   </div>
+ 
+ <!-- Binding to show weather data -->
+ <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+ <div class="well search-result">
+ <h1 ng-bind="title" style="width:100%; text-align:center;"></h1>
+ <!-- Binding to show weather data -->
+ <div id='output'; ng-show='weatherData'; ng-include="'weatherinfo.html'"; style="width:100%; text-align:center;">
+ </div>
+ 
+ </div>
+ </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="well search-result">
+			
+        		<div class="input-group" style='width:100%'> 
+        		<input type="text" class="form-control"  ng-model="place"/>         
+			    </div>
+        	</div>
+		</div>
+		
+		
+		 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="well search-result">
+        		<span class="input-group-btn" style='text-align:center'>
+			        <input class="btn btn-info btn-lg" type="submit" ng-click="getWeatherData()" style='z-index: 2;width: 30%;margin-left: -1px; padding: 1em;'/>
+                        <i class="glyphicon glyphicon-search"></i>
+                        Search
+			      </span>
+        	</div>
+		</div>
+</div>
+
+  
+</body>
+</html>

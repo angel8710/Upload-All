@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>TEST</title>
+  <link rel="icon" href="./img/test.png" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/content.js"></script>
+  <style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    color: #fff;
+    background-color: #45484d;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#45484d),to(#000));
+    background-image: -webkit-linear-gradient(top,#45484d,#000);
+    background-image: -moz-linear-gradient(top,#45484d,#000);
+    background-image: -ms-linear-gradient(top,#45484d,#000);
+    background-image: -o-linear-gradient(top,#45484d,#000);
+    background-image: linear-gradient(to bottom,#45484d,#000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#45484D,endColorstr=#000000);
+}
+  
+  </style>
+ <script>
+         $(document).ready(function() {
+			
+            $("#driver").click(function(event){
+               $.getJSON('result.json', function(jd) {
+                  $('#stage').html('<p>' + jd.name+ '</p>');
+               });
+            });
+         });
+      </script>
+	  
+	   <script>
+         $(document).ready(function() {
+			
+            $("#driver").click(function(event){
+               $.getJSON('result1.json', function(jd) {
+                   $('#stage1').append('<p>' + jd.age+ '</p>');
+               });
+            });	
+         });
+      </script>
+	  
+	   <script>
+         $(document).ready(function() {
+			
+            $("#driver").click(function(event){
+               $.getJSON('result3.json', function(jd) {
+                   $('#stage3').append('<p>' + jd.gender+ '</p>');
+               });
+            });	
+         });
+      </script>
+	  
+	   <script>
+         $(document).ready(function() {
+			
+            $("#driver").click(function(event){
+               $.getJSON('result4.json', function(jd) {
+                   $('#stage4').append('<p>' + jd.phone+ '</p>');
+               });
+            });	
+         });
+      </script>
+	  
+	   <script>
+         $(document).ready(function() {
+			
+            $("#driver").click(function(event){
+               $.getJSON('result5.json', function(jd) {
+                   $('#stage5').append('<p>' + jd.occupation+ '</p>');
+               });
+            });	
+         });
+      </script>
+	  
+	   <script>
+         $(document).ready(function() {
+			
+            $("#driver").click(function(event){
+               $.getJSON('result2.json', function(jd) {
+                  $('#stage2').append('<p>' + jd.country+ '</p>');
+               });
+            });
+         });
+      </script>
+</head>
+
+<body>
+ <header> 
+ 
+ <div class="logo navbar-left">	
+			<a href="index.html"><img src="./img/logo.png" alt="" /></a>				
+		</div>	
+ 
+   <div id="menu">
+      <ul>
+        <li class=""><a href="#">Home</a></li>
+        <li class=""><a href="#">Sports</a></li>
+        <li class=""><a href="#">Casino</a></li>
+        <div class="dropdown">
+<button style='line-height:33px; 'onclick="myFunc()" class="dropbtn">Games</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Mega Moolah</a>
+    <a href="#">The curse of the black Perl</a>
+    <a href="#">Super Slots Attack</a>
+  </div>
+</div>
+      </ul>
+    </div>
+	
+	<div  style="float:right; margin-right:4px; margin-top: 92px; margin-left: 132px;">
+        <ul>
+		<li><a href="" class="lang"><img src="./img/flag1.png" alt=""></a></li>
+        <li><a href="" class="lang"><img src="./img/flag3.png" alt=""></a></li>
+		<li><a href="" class="lang"><img src="./img/flag2.png" alt=""></a></li>
+		</ul>					
+        </div>
+</header>
+						
+ <div id="wrapper">
+           
+            <div class='nav'>
+               <!-- Accordion -->
+<dl class="accordion">
+  <dt>Click To open</dt>
+  <dd class="active">
+ <!-- Default to active -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Sequi voluptatum enim nobis eligendi error consectetur nemo 
+      distinctio expedita quis illo ipsam minima id dicta quisquam 
+      repudiandae a repellat officia. Minus. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Sequi voluptatum enim nobis eligendi error consectetur nemo 
+      distinctio expedita quis illo ipsam minima id dicta quisquam 
+      repudiandae a repellat officia. Minus. </p>
+
+  </dd>
+  <dt>Click To open </dt>
+  <dd>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Sequi voluptatum enim nobis eligendi error consectetur nemo 
+      distinctio expedita quis illo ipsam minima id dicta quisquam 
+      repudiandae a repellat officia. Minus. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Sequi voluptatum enim nobis eligendi error consectetur nemo 
+      distinctio expedita quis illo ipsam minima id dicta quisquam 
+      repudiandae a repellat officia. Minus. </p>
+  </dd>
+  <dt>Click To open</dt>
+  <dd>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Sequi voluptatum enim nobis eligendi error consectetur nemo 
+      distinctio expedita quis illo ipsam minima id dicta quisquam 
+      repudiandae a repellat officia. Minus. </p>
+  </dd>
+  
+  
+</dl>
+
+
+<script>
+$(function () {
+
+    // Apply to element 
+    $(".accordion").SimpleAccordion();  
+
+});
+
+</script>
+
+
+        </nav>
+
+                
+            </div>
+            <div id="content">
+			
+			<h1>Page Title</h1>
+			<hr style="border: 1px solid #1e1e1e" />​
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Suspendisse dapibus metus dolor, ut commodo lacus fringilla eu.
+				Etiam suscipit, justo in rhoncus rutrum, neque leo tempor ligula,
+				a accumsan urna nibh ut felis. Nullam et arcu in velit vehicula
+				suscipit pulvinar scelerisque risus. Suspendisse potenti. 
+				Praesent efficitur laoreet molestie. Suspendisse sed nisl nibh. 
+				In eu turpis sit amet augue consectetur venenatis. Nulla facilisi. 
+				Mauris interdum at mauris interdum porta. Suspendisse dolor justo, 
+				tempor sed laoreet sed, porta quis dui. Nulla facilisi. 
+				Duis interdum ultrices dignissim. Sed dui dui, 
+				imperdiet ut ante vel, commodo aliquet enim. Vestibulum sit 
+				amet mauris sit amet nisi porta cursus. Duis in tortor magna. 
+				Donec euismod at massa vel porttitor.</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Suspendisse dapibus metus dolor, ut commodo lacus fringilla eu.
+				Etiam suscipit, justo in rhoncus rutrum, neque leo tempor ligula,
+				a accumsan urna nibh ut felis. Nullam et arcu in velit vehicula
+				suscipit pulvinar scelerisque risus. Suspendisse potenti. 
+				Praesent efficitur laoreet molestie. Suspendisse sed nisl nibh. 
+				In eu turpis sit amet augue consectetur venenatis. Nulla facilisi. 
+				Mauris interdum at mauris interdum porta. Suspendisse dolor justo, 
+				tempor sed laoreet sed, porta quis dui. Nulla facilisi. 
+				Duis interdum ultrices dignissim. Sed dui dui, 
+				imperdiet ut ante vel, commodo aliquet enim. Vestibulum sit 
+				amet mauris sit amet nisi porta cursus. Duis in tortor magna. 
+				Donec euismod at massa vel porttitor.</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Suspendisse dapibus metus dolor, ut commodo lacus fringilla eu.
+				Etiam suscipit, justo in rhoncus rutrum, neque leo tempor ligula,
+				a accumsan urna nibh ut felis. Nullam et arcu in velit vehicula
+				suscipit pulvinar scelerisque risus. Suspendisse potenti. 
+				Praesent efficitur laoreet molestie. Suspendisse sed nisl nibh. 
+				In eu turpis sit amet augue consectetur venenatis. Nulla facilisi. 
+				Mauris interdum at mauris interdum porta. Suspendisse dolor justo, 
+				tempor sed laoreet sed, porta quis dui. Nulla facilisi. 
+				Duis interdum ultrices dignissim. Sed dui dui, 
+				imperdiet ut ante vel, commodo aliquet enim. Vestibulum sit 
+				amet mauris sit amet nisi porta cursus. Duis in tortor magna. 
+				Donec euismod at massa vel porttitor.</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Suspendisse dapibus metus dolor, ut commodo lacus fringilla eu.
+				Etiam suscipit, justo in rhoncus rutrum, neque leo tempor ligula,
+				a accumsan urna nibh ut felis. Nullam et arcu in velit vehicula
+				suscipit pulvinar scelerisque risus. Suspendisse potenti. 
+				Praesent efficitur laoreet molestie. Suspendisse sed nisl nibh. 
+				In eu turpis sit amet augue consectetur venenatis. Nulla facilisi. 
+				Mauris interdum at mauris interdum porta.</p>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Suspendisse dapibus metus dolor, ut commodo lacus fringilla eu.
+				Etiam suscipit, justo in rhoncus rutrum, neque leo tempor ligula,
+				a accumsan urna nibh ut felis. Nullam et arcu in velit vehicula
+				suscipit pulvinar scelerisque risus. Suspendisse potenti. 
+				Praesent efficitur laoreet molestie. Suspendisse sed nisl nibh. 
+				In eu turpis sit amet augue consectetur venenatis. Nulla facilisi. 
+				Mauris interdum at mauris interdum porta. Suspendisse dolor justo, 
+				tempor sed laoreet sed, porta quis dui. Nulla facilisi. 
+				Duis interdum ultrices dignissim. Sed dui dui, 
+				imperdiet ut ante vel, commodo aliquet enim. Vestibulum sit 
+				amet mauris sit amet nisi porta cursus. Duis in tortor magna. 
+				Donec euismod at massa vel porttitor.</p>
+				
+				 <table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+	<th>Gender</th>
+	<th>Phone</th>
+	<th>Occupation</th>
+    <th>Country</th>
+  </tr>
+  
+  <tr>
+    <td><div id = "stage">
+         
+      </div></td>
+    <td><div id = "stage1">
+         
+      </div></td>
+    <td><div id = "stage3">
+         
+      </div></td>
+
+    <td><div id = "stage4">
+         
+      </div></td>
+    <td><div id = "stage5">
+         
+      </div></td>
+    <td><div id = "stage2">
+         
+      </div></td>
+  </tr>
+ 
+</table>
+<input type = "button" id = "driver" class="button" value = "Load JSon Data" />
+            </div>
+         
+        </div> <!-- Wrapper -->
+<div class="clerfix"></div>
+	<hr style='background-color:#fff; width:80%'>		
+	<div id='footer'>
+			
+	<h4>2003-2011 Copyright &copy; 10Bet.com Ltd. All rights reserved.</h4>
+	<ul>
+ <li><a>Home</a></li>
+ <li><a>Terms of Use</a></li>
+ <li><a>Responsible Gaming</a></li>
+ <li><a>Contact Us</a></li>
+</ul>
+			
+	</div>
+
+</body>
+</html>
+ 

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sky Forge The Beginning of an Era</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<link rel="icon" type="image/gif" href="./img/favicon.gif" />
+
+<link href="css/stylef.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/main.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/styleanimation.css" type="text/css" rel="stylesheet" media="all">
+<!-- Custom Theme files -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Weekend Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--web-fonts-->
+<link href='http://fonts.googleapis.com/css?family=Philosopher:400,700,400italic,700italic|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+ <script src="js/bootstrap.js"> </script>
+<script src="js/modernizr.custom.js"></script>
+<!--//js-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+<!--Custom Css Modal Window -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
+<script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'></script>
+<script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+
+<script type='text/javascript'>//<![CDATA[
+$(function(){
+$('#myModal').modal('click');
+// www.jquery2dotnet.com
+});//]]> 
+</script>
+<script>
+    $("#Modal").on("show", function() {    // wire up the OK button to dismiss the modal when shown
+        $("#Modal a.btn").on("click", function(e) {
+            console.log("button pressed");   // just as an example...
+            $("#Modal").modal('hide');     // dismiss the dialog
+        });
+    });
+    $("#Modal").on("hide", function() {    // remove the event listeners when the dialog is dismissed
+        $("#Modal a.btn").off("click");
+    });
+    
+    $("#Modal").on("hidden", function() {  // remove the actual elements from the DOM when fully hidden
+        $("#Modal").remove();
+    });
+    
+    $("#Modal").modal({                    // wire up the actual modal functionality and show the dialog
+      "backdrop"  : "static",
+      "keyboard"  : true,
+      "show"      : true                     // ensure the modal is shown immediately
+    });
+</script>
+</head>
+  <!--start-home-->
+ <body class="cbp-spmenu-push">
+       <!--top-header-->
+        <div id="house" class="top-header">
+			  <div class="container">
+				 
+				 <p class="col-md-3 phone"><i class="glyphicon glyphicon-phone"></i> 655 7758 2068 54892</p>
+				 <p class="col-md-3 mail"><i class="glyphicon glyphicon-envelope"></i><a href="mailto:info@example.com">mail@example.com</a></p>
+				<div class="col-md-3 search">
+					<form>
+						<input type="submit" value="">
+						<input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			 </div>
+		</div>
+		<!--bottomner-->
+		  <section class="buttonset">
+					<button id="showLeftPush"><img src="images/menu-icon.png" alt=""></button>
+		   </section>
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Menu</h3>
+			<a href="index.html" class="active">Home</a>
+						<a href="heroes.html">Heroes</a>
+						<a href="class.html">Classess</a>
+						<a href="News.html">News</a>
+					    <a href="gallery.html">Gallery</a>
+					
+
+		  </nav>
+	  <div class='logo'>
+     <h1>
+        <a href='#'></a>
+            </h1>
+</div>
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
+ <!--start-events-->
+ 
+ <div id="Modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Necromancer</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">A necromancer is a powerful sorcerer and master of death. Using dreadful spells, they're able to raise and summon horrifying undead creatures and use spells to deal damage at the sacrifice of life. They can even transform themselves into a powerful lich, gaining access to new necrotic abilities, that restore their health by syphoning it from their enemies.
+        
+Lich form transform mechanic
+
+Lich form will automatically activate if the Necromancer were to die from an attack or health sacrifice. The cooldown on this mechanic is shown as a debuff that will start at 30 seconds and count down. Casting Lich form manually will trigger this debuff. While this debuff is active, the necromancer cannot manually transform either, but having it happen will not put manual Lich form on its 45 second cooldown. If the necromancer has zero Lich charge when he would die and the debuff is not on him, Lich form will occur with a 5 second duration. While in Lich form, the necromancer cannot die. If the debuff is not on the necromancer, the necromancer cannot be executed in PvP.</h4>
+		<br/><p class="nested-list"><img src='./img/t1.jpg'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+ 
+  <!--start-events-->
+ 
+ <div id="Modal1" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Monk</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">Being of a martial order, a monk has mastered the discipline of body and mind. Wielding their staff,  a monk fight using several special stances, enabling them to perform dizzying acrobatic feats and deliver powerful blows against their enemies. Each stance is tailored to provide different advantages, and a monk will want to switch between them depending on what they are fighting. Earth stance is best suited when fighting a single foe, while fire stance is a better option when fighting several enemies. Wind stance provides maximum agility, allowing a monk to mitigate damage.
+</h4>
+		</br></br></br><p class="nested-list"><img src='./img/monk.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal2" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Alchemist</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">Being an alchemist means being a half-mad scientists with access to an arsenal of corrosive chemical compounds and invigorating elixirs. Equipped with a portable alchemy laboratory, they can spray acid and fire at enemies and inflict significant damage with their bladed claws.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/Alchemist.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal3" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Archer</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">An archer is an evasive marksman capable of hitting targets from great distances. They also use special gadgets including traps which slow enemies and an assortment of electrical and fire arrows.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/Archer.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal4" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Gunner</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">As long-ranged weapon's expert, a gunner tirelessly study and improve their weaponry, optimizing it for raining down chaos. Remorseless, they have no qualms about putting their destructive technology to use and blanket the battlefields with bullets, super-heated plasma and explosive rockets.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/Gunner.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal5" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Knight</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">A knight is capable of withstanding the onslaught of numerous enemies, diverting their attention from less protected allies. Armed with shield and spear, they are able to not only block incoming attacks, but to also deliver crushing blows in return.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/Knight.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal6" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Kinetic</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">A kinetic is able to manipulate energy thanks to their special gauntlets, enabling them to hurtle projectiles at enemies, surround allies in gravitational shields and control their movement on the battlefield by altering the gravitational fields around them.
+
+The kinetic class focuses on burst damage, and is split primarily into two different play styles. One centers on the skill Sledgehammer, a melee ability, and the other is based on Stone Spear, a ranged ability.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/knetic.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal7" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Paladin</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">A paladin is a fearless tank with a wide range of offensive and defensive skills. They can be found in the heart of battle, crushing foes and protecting nearby allies. A fierce fighter up close, they call upon their Holy Powers to shield allies and engage enemies from afar.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/paladin.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal8" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>LightBinder</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">Harnessing the Power of Light, a lightbinder offer support by increasing their allies' damage and shielding them from incoming damage. When they direct their white hot anger at enemies, they can disrupt their formations and inflict great damage from afar.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/lightbinder.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal9" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Cryomancer</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">A cryomancer utilize their advanced cryogenerator to compress and freeze the air around them, turning it into powerful beams of ice. Keeping a safe distance in a fight, they're capable of slowing down or immobilizing opponents by freezing them solid.
+
+The cryomancer is a great choice for those who prefer action to standing still, appreciate tactical manoeuvres, and seek to control their enemies' actions.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/cryomancer.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal10" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Berserker</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">Fueled by rage, a berserker can easily sweep aside hordes of enemies in their path with their fiery chainblade. During heated battles, they're capable of mending some of their wounds while striking terror into the hearts of nearby foes and inspiring allies.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/berserker.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+ 
+   <!--start-events-->
+ 
+ <div id="Modal11" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <p style='float:left; margin-left: -7px;margin-top: -10px;'><img src='./img/logo.png'/></p>Warlock/Witch</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+	  
+        <h4 class="textmodal">The female witch and the male warlock have an arsenal of dark sorcery at their disposal: terrible curses, frightening creatures, mysterious potions and, of course, their trusty broom, which acts as both a powerful weapon and a means of transportation.
+
+        A warlock or witch bring their damage in the form of sustained dps and consumable burst. Their primary means of damage is through applying debuffs on their primary targets, and then having the ability to spread the debuffs/damage to other foes around the main target. In conjunction with have potent single target target and area spread damage, the Warlock has the ability to consume their dots to provide burst dps when needed or required. In addition to their damaging capabilities, they have the ability to crowd control enemies very well as in addition to reducing the overall effectiveness of the enemies actions. However, although they have the capability to bring many benefits to a group and excel in solo play, they are quite fragile and require proper skill management and stance dancing to be the most effective in combat.
+		</h4>
+		</br></br></br><p class="nested-list"><img src='./img/witch.JPG'/><span class="arrow"></span></p><br/>
+		</div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+ <!--End event -->
+
+ 
+		<div class="news">
+		    <div class="container">
+
+			 <div class="news-article">
+			  <div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+								 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+						
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				  <a href="#" data-toggle="modal" data-target="#Modal" class="mask"><img src="img/1.jpg" alt="image" class="img-responsive zoom-img"></a>
+					
+				</div>
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>		
+				 <div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+						
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href="#"data-toggle="modal" data-target="#Modal1" class="mask"><img src="img/2.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+					
+				</div>
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>	
+				 <div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html"data-toggle="modal" data-target="#Modal1" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+						
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href="#" data-toggle="modal" data-target="#Modal2" class="mask"><img src="img/6.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+					
+				</div>
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+				 <div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+						
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href="#"data-toggle="modal" data-target="#Modal3" class="mask"><img src="img/7.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+					
+				</div>
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+				 <div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+						
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href=""data-toggle="modal" data-target="#Modal4" class="mask"><img src="img/8.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+					
+				</div>
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+				 <div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+			
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href=""data-toggle="modal" data-target="#Modal5" class="mask"><img src="img/15.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+				</div>
+				
+				
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+			
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href="#"data-toggle="modal" data-target="#Modal6" class="mask"><img src="img/17.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+				</div>
+				
+				
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+			
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href="" data-toggle="modal" data-target="#Modal7"class="mask"><img src="img/18.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+				</div>
+				
+				
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+			
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href=""data-toggle="modal" data-target="#Modal8" class="mask"><img src="img/19.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+				</div>
+				
+				
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+			
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href=""data-toggle="modal" data-target="#Modal9" class="mask"><img src="img/20.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+				</div>
+				
+				
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+			
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href="" data-toggle="modal" data-target="#Modal10"class="mask"><img src="img/21.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+				</div>
+				
+				
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 article-post">
+				   <div class="col-md-3 post-meta">
+						<div class="meta-icon">
+							<div class="pic">
+							 <a href="single.html" > <i class="glyphicon glyphicon-picture"></i></a>
+							</div>
+						</div>
+			
+						<div class="clearfix"> </div>
+				  </div>
+				<div class="col-md-9 post-details">
+				 <a href="#"data-toggle="modal" data-target="#Modal11" class="mask"><img src="img/22.jpg" alt="image" class="img-responsive zoom-img"></a>
+
+				</div>
+				
+				
+				<!--post-details-->	
+				<div class="clearfix"> </div>
+				</div>
+			    <div class="clearfix"> </div>				
+			</div>
+			<!--start-news-pagenate-->
+				<div class="blog-pagenat">
+					<ul>
+						<li><a class="frist" href="#">Prev</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a class="last" href="#">Next</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+			<!--//End-news-pagenate-->
+
+		</div>
+	</div>
+
+
+		<!--/footer-->
+			<div class="copy">
+		              <p>&copy; 2016 SkyForge New Version. All Rights Reserved | Design by <a href="#">AZ</a> </p>
+		            </div>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>

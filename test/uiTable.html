@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Practice for Web</title>
+<link type="text/css" rel="stylesheet" href="style/css.css"  />
+<link type="text/css" rel="stylesheet" href="style/bootstrap-theme.css"  />
+<link type="text/css" rel="stylesheet" href="style/bootstrap-theme.min.css"  />
+<link type="text/css" rel="stylesheet" href="style/bootstrap.css"  />
+<link type="text/css" rel="stylesheet" href="style/bootstrap.min.css"  />
+
+<link rel="stylesheet" href="js0/alertify.css" />
+<link rel="stylesheet" href="css/alertify.default.css" />
+
+<script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/testvane.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/calc.js" type="text/javascript" charset="utf-8"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="js/calc.js" type="text/javascript" charset="utf-8"></script>
+ <script src="js0/alertify.min.js"></script>
+<!-- polezen script  s checkbox 
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#selecctall').on('click',function(){
+        if(this.checked){
+            $('.check').each(function(){
+                this.checked = true;
+            });
+        }else{
+             $('.check').each(function(){
+			 
+                this.checked = false;
+            });
+        }
+    });
+});
+
+
+
+$(document).ready(function(){
+    $("#selecctall").click(function(event){
+	 var $this = $(this);
+	 
+		var c = confirm('Are you sure you want to delete the Entire Data Table?');
+	 $this.checked = true;
+        $this.parents("#customers").fadeOut()(function(){
+
+
+
+
+		$this.remove();
+
+		});
+	
+    });
+		return false;
+});
+
+
+$(document).ready(function(){
+    $('.check').on('click',function(event){
+	    var $this = $(this);
+		var c = confirm('Are you sure to delete this Person?');
+        if(c){
+            $('.check').each(function(){
+                this.checked = true;
+				$this.parents('tr').fadeOut()(function(){ 
+				
+   				$this.remove();
+						
+						});
+            });
+        }
+    });
+	return false;
+});
+</script>-->
+             </head>
+<body>
+
+<div id="container" class="data">
+<table id="customers" class="table-responsive">
+<thead>
+  
+  <th>Company</th>
+  <th>Contact</th>
+  <th>Country</th>
+  <th>Price</th>
+  <th>Person</th>
+<th>Select <button type="button" class="btn btn-danger" value="Delete Data " onclick="customersDelete()">Delete Data</button><!--<input type="checkbox"  class="ch" id="selecctall"/>--></th>
+</thead>
+</div>
+<tbody>
+<tr id="all">
+<td>Alfreds Futterkiste</td>
+<td>Maria Anders</td>
+<td>Germany</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+  <td><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button>
+</tr>
+<tr class="alt">
+<td>Berglunds Sinstone</td>
+<td>Christina Berglund</td>
+<td>Sweden</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr>
+<td>Centro comercial Moctezuma</td>
+<td>Francisco Chang</td>
+<td>Mexico</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr class="alt">
+<td>Ernst Handel</td>
+<td>Roland Mendel</td>
+<td>Austria</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr>
+<td>Island Trading</td>
+<td>Helen Bennett</td>
+<td>UK</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr class="alt">
+<td>Kuniglich Essen</td>
+<td>Philip Cramer</td>
+<td>Germany</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr>
+<td>Laughing Bacchus Winecellars</td>
+<td>Yoshi Tannamuri</td>
+<td>Canada</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr class="alt">
+<td>Magazzini Alimentari Riuniti</td>
+<td>Giovanni Rovelli</td>
+<td>Italy</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr>
+<td>North/South</td>
+<td>Simon Crowther</td>
+<td>UK</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr class="alt">
+<td>Paris specialites</td>
+<td>Marie Bertrand</td>
+<td>France</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr>
+<td>The Big Cheese</td>
+<td>Liz Nixon</td>
+<td>USA</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+<tr class="alt">
+<td>Vaffeljernet</td>
+<td>Palle Ibsen</td>
+<td>Denmark</td>
+<td>$123.45</td>
+<td><img src="./images/user.png" style="width:70px; height:70px;"/></td>
+<td id="c"><button type="button" class="btn btn-danger" value="Delete Data " onclick="deleteRow(this)">Delete Person</button></td>
+</tr>
+
+</div>
+</div>
+</tbody></table></div>
+
+<p>
+<button type="button" class="btn btn-primary btn-lg btn-block" value="Add New Customer" onclick="customers();" />New Customer<button>
+<!--<input type="button" class = "button" value="Delete New Customer" onclick="customersDelete();" />-->
+
+<button type="button" class="btn btn-primary btn-lg btn-block" value="Add New 5 Customers" onclick="custom();" />Add New 5 Customers</button>
+
+
+</p>
+
+
+
+
+</body>
+
+</html>

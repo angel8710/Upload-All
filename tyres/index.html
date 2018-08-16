@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+		<meta name="keywords" content="гуми, зимни гуми, летни гуми, всесезонни гуми, джанти, гуми за джипове, бусови гуми, продажба на гуми, магазин гуми, евтини гуми, автомобилни гуми, гуми цени">
+        <meta name="description" content="Онлайн магазин за гуми и джанти. Летни гуми, зимни гуми и всесезонни гуми за автомобили, джипове и бусове. Над 1000 модела гуми и джанти на изгодни цени">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	  
+	  <!-- <msdropdown> -->
+      <script src="js1/jquery.ddslick"></script>
+       <!-- </msdropdown> -->	
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="csssega/style.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
+        <script type='text/javascript' src='//code.jquery.com/jquery-1.8.3.js'></script>
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+        <style type='text/css'>
+.nav-tabs {
+    margin-bottom: 15px;
+}
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}
+  </style>
+<script type='text/javascript'>//<![CDATA[
+$(function(){
+$('#myModal').modal('click');
+// www.jquery2dotnet.com
+});//]]> 
+</script>
+<script>
+    $("#Modal").on("show", function() {    // wire up the OK button to dismiss the modal when shown
+        $("#Modal a.btn").on("click", function(e) {
+            console.log("button pressed");   // just as an example...
+            $("#Modal").modal('hide');     // dismiss the dialog
+        });
+    });
+    $("#Modal").on("hide", function() {    // remove the event listeners when the dialog is dismissed
+        $("#Modal a.btn").off("click");
+    });
+    
+    $("#Modal").on("hidden", function() {  // remove the actual elements from the DOM when fully hidden
+        $("#Modal").remove();
+    });
+    
+    $("#Modal").modal({                    // wire up the actual modal functionality and show the dialog
+      "backdrop"  : "static",
+      "keyboard"  : true,
+      "show"      : true                     // ensure the modal is shown immediately
+    });
+</script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<div class="main-header">
+        <div class="header-container">
+		<div>
+<div id="logo">
+<img src="./img/logobg.png" style="margin-top:0 px;" alt="logo" title="">
+</div>
+<!-- Navigation top -->
+   <nav>
+		    <ul div id="top-right">
+		        <div id="home">
+		   <li><a href="home.html"><span class="icon-nav-1"></span></a></li>
+	              <li><a href="time.html"  data-toggle="modal" data-target="#Modal" ><img src="./img/time.png"  style="background-position: -40px -260px; width:40px; height:40px;margin-top: -33px;" /><span class="icon-nav-2" ></span></a></li>
+		    <li><a href="buy.html"><span class="icon-nav-3 "></span></a></li>
+				   <li ><a href="contact.html" data-toggle="modal" data-target="#myModal" ><span class="icon-nav-4 "></span></a></li>
+				
+             </div>		   
+ </nav>
+         </div>
+		 <!-- set up the modal to start hidden and fade in and out -->
+<div id="Modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 Working Hours!</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+        <br/><span class="nested-list">Hours: 9:00am - 18:00pm<span class="arrow"></span></span><br/>
+        <br/><span class="nested-list">Information Hours: 9:00am - 16:00pm</span><br/>	
+        <br/><span class="nested-list">Service Hours: 10:00am - 16:00pm</span><br/>
+        <br/><span class="nested-list">Delivery Hours: 10:00am - 16:00pm</span><br/>	
+        <br/><span class="nested-list">Queries: 9:00am - 15:00pm</span><br/>			
+        </div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+<!-- Location modal -->
+<div id="Locationmodal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                Location</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24181.17999282862!2d-73.99610650245684!3d40.747781381277555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x9cb912038d5d24fe!2sGoodyear+NYC+Tire+and+Auto+Care!5e0!3m2!1sen!2suk!4v1447001245466" width="552" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div> 
+	<!-- Large Modal -->
+		 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;</button>
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+                    Login/Registration</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+							<li><a href="#Location" data-toggle="modal" data-target="#Locationmodal" >Location</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Login">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email1" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary btn-sm">
+                                            Submit</button>
+                                        <a href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="Registration">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Name</label>
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <select class="form-control">
+                                                    <option>Mr.</option>
+                                                    <option>Ms.</option>
+                                                    <option>Mrs.</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" placeholder="Name" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile" class="col-sm-2 control-label">
+                                        Mobile</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="password" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                            Save & Continue</button>
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>					
+                        <div id="OR" class="hidden-xs">
+                            OR</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center sign-with">
+                            <div class="col-md-12">
+                                <h3>
+                                    Sign in with</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="btn-group btn-group-justified">
+                                    <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
+                                        Google</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button></div>
+            </div>
+        </div>
+    </div>
+</div>	 
+<div id="Imgmodal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 Gallery Tyres</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+     <img src="./tyres/tpcar.jpg" alt="" style="margin-left: 4em;"/>
+        </div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+<div id="Imgmodal2" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 Gallery Tyres</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+     <img src="./tyres/tpcar (8).jpg" alt="" style="margin-left: 4em;"/>
+        </div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+<div id="Imgmodal3" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 Gallery Tyres</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+     <img src="./tyres/tpcar (9).jpg" alt="" style="margin-left: 4em;"/>
+        </div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+<div id="Imgmodal4" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 Gallery Tyres</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+     <img src="./tyres/tpcar (16).jpg" alt="" style="margin-left: 6em;"/>
+        </div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+<div id="Imgmodal5" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 Gallery Tyres</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+     <img src="./tyres/tpcar (19).jpg" alt="" style="margin-left: 6em;"/>
+        </div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+<div id="Imgmodal6" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel" style="color:#fff; font-size:20px;">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+                 Gallery Tyres</h4>
+            </div>
+      <!-- dialog body -->
+      <div class="modal-body" style="font-size:20px;">
+     <img src="./tyres/tpcar (20).jpg" alt="" style="margin-left: 6em;"/>
+        </div>  
+      <!-- dialog buttons -->
+      <div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">OK</button></div>
+    </div>
+  </div>
+</div>
+<header class="wrapper clearfix">
+	<!--<div id="form">		
+	<form id="searchform" name="searchform" method="get" action="index.html">
+      <div class="fieldcontainer">
+        <input type="text" name="s" id="s" class="searchfield" placeholder="Keywords..." tabindex="1">
+        <input type="submit" name="searchbtn" id="searchbtn" value=""> 
+      </div><!-- @end .fieldcontainer 
+    </form>
+	</div>-->	
+<div class="gol"><ul class="gen-menu" style="text-decoration:none;">
+<li class="active"><a href="#"><span class="icon-type type-1 "></span>
+<div class="span">Vehicules</div></a></li>
+<li class="active"><a href="#"><span class="icon-type type-2 "></span>
+<div class="span">SUV</div></a></li>
+<li class="active"><a href="#"><span class="icon-type type-3 "></span>
+<div class="span">Van&Truck</div></a></li>
+<li class="active"><a href="#"><span class="icon-type type-4 "></span>
+<div class="span">Long Truck</div></a></li>
+<li class="active"><a href="#"><span class="icon-type type-6 "></span>
+<div class="span">Tractor</div></a></li>
+<li class="active"><a href="#"><span class="icon-type type-5 "></span>
+<div class="span">Motor</div></a></li>
+        </ul>
+</div>
+        </header>		  
+         </div>
+</div>
+		<br>
+<div class="wrap" >
+         <tbody>
+			    <tr>
+			        <form method="post" action="action" name="Form" onsubmit="return Validate();">
+			             <td height="50" align="left"></td>
+			                 <td ><select id="width"  class="form" type="width" name="width">
+    			<option value="Option 1">Width</option>
+				<option value="Option 2">125</option>
+				<option value="Option 3">135</option>
+				<option value="Option 4">145</option>
+				<option value="Option 5">155</option>
+				<option value="Option 6">165</option>
+				<option value="Option 7">175</option>
+				<option value="Option 8">185</option>
+				<option value="Option 9">195</option>
+				<option value="Option 10">205</option>
+				<option value="Option 11">215</option>
+				<option value="Option 12">225</option>
+				<option value="Option 13">235</option>
+				<option value="Option 14">245</option>
+				<option value="Option 15">255</option>
+				<option value="Option 16">265</option>
+				<option value="Option 17">275</option>
+				<option value="Option 18">285</option>
+				<option value="Option 19">295</option>
+				<option value="Option 20">30</option>
+				<option value="Option 21">305</option>
+				<option value="Option 22">31</option>
+				<option value="Option 23">315</option>
+			    <option value="Option 24">32</option>
+				<option value="Option 25">325</option>
+				<option value="Option 26">35</option>
+				<option value="Option 27">335</option>
+				<option value="Option 28">345</option>
+				<option value="Option 29">35</option>
+				<option value="Option 30">37</option>
+</select>
+     </tr>
+<div class="clearfix"></div>
+<tr>		
+	<td height="50" align="left"></td>
+			<td ><select id="height"  class="form" type="height" name="height">
+    			<option value="Option 1">Height</option>
+				<option value="Option 2">9.5</option>
+				<option value="Option 3">10.5</option>
+				<option value="Option 4">11.5</option>
+				<option value="Option 5">12.5</option>
+				<option value="Option 6">25</option>
+				<option value="Option 7">30</option>
+				<option value="Option 8">35</option>
+				<option value="Option 9">40</option>
+				<option value="Option 10">45</option>
+				<option value="Option 11">50</option>
+				<option value="Option 12">55</option>
+				<option value="Option 13">60</option>
+				<option value="Option 14">65</option>
+				<option value="Option 15">70</option>
+				<option value="Option 16">75</option>
+				<option value="Option 17">80</option>
+				<option value="Option 18">85</option>
+</select>
+     </tr>
+<div class="clearfix"></div>
+            <tr>
+			 <td height="50" align="left"></td>
+			 <td ><select id="diamter"  class="form" type="diamter" name="diamter">
+    			<option value="Option 1">Diameter</option>
+				<option value="Option 2">R12</option>
+				<option value="Option 3">R13</option>
+				<option value="Option 3">R14</option>
+				<option value="Option 4">R15</option>
+				<option value="Option 5">R16</option>
+				<option value="Option 6">R17</option>
+				<option value="Option 7">R18</option>
+				<option value="Option 8">R19</option>
+				<option value="Option 9">R20</option>
+				<option value="Option 10">R21</option>
+				<option value="Option 11">R22</option>
+				<option value="Option 12">R23</option>
+				<option value="Option 13">R24</option>
+				<option value="Option 14">R25</option>
+    </select>
+     </tr>
+<div class="clearfix"></div>
+  			<tr>
+			 <td height="50" align="left"></label></td>
+			 <td ><select id="season"  class="form" type="season" name="season">
+    			<option value="Option 1">Season</option>
+				<option value="Option 2">Winter</option>
+				<option value="Option 3">Summer</option>
+				<option value="Option 4">All Season</option>
+         </select>
+    </tr> 
+	<div class="clearfix"></div>
+  			<tr>
+			 <td height="50" align="left"></label></td>
+			 <td ><select id="company"  class="form" type="company" name="company">
+    			<option value="Option 1">Company</option>
+				<option value="Option 2">BARUM</option>
+				<option value="Option 3">BFGOODRICH</option>
+				<option value="Option 4">BRIDGETSTONE</option>
+				<option value="Option 5">CONTINENTAL</option>
+				<option value="Option 6">COOPER</option>
+				<option value="Option 7">DYTON</option>
+				<option value="Option 8">DEBICA</option>
+				<option value="Option 9">DUNLOP</option>
+				<option value="Option 10">FALKEN</option>
+				<option value="Option 11">FEDERAL</option>
+				<option value="Option 12">FIRESTONE</option>
+				<option value="Option 13">FULDA</option>
+				<option value="Option 14">GENERAL TYRE</option>
+				<option value="Option 15">GOODYEAR</option>
+				<option value="Option 16">GRIPMAX</option>
+				<option value="Option 17">HANKOOK</option>
+				<option value="Option 18">KENDA</option>
+				<option value="Option 19">KLEBER</option>
+				<option value="Option 20">KURMORAN</option>
+				<option value="Option 21">KUMHO</option>
+				<option value="Option 22">MICHELIN</option>
+				<option value="Option 23">HANKANG</option>
+				<option value="Option 24">NEXEN</option>
+				<option value="Option 25">NOKIAN</option>
+				<option value="Option 26">PETLAS</option>
+				<option value="Option 27">PIRELLI</option>
+				<option value="Option 28">RIKEN</option>
+				<option value="Option 29">SAVA</option>
+				<option value="Option 30">SEMPERIT</option>
+				<option value="Option 31">SILVERSTONE</option>
+				<option value="Option 32">SPORTIVA</option>
+				<option value="Option 33">SUNNY</option>
+				<option value="Option 34">TAURUS</option>
+				<option value="Option 35">TIGAR</option>
+				<option value="Option 36">TOYO</option>
+				<option value="Option 37">TRAZANO</option>
+				<option value="Option 38">UNIROYAL</option>
+				<option value="Option 39">VREDESTEIN</option>
+				<option value="Option 40">YOKOHAMA</option>
+         </select>
+    </tr> 
+</form>
+<button class="btnsearch">Search</button>
+	    </tbody>
+		         </div>
+	<!--start-image-slider-
+					<div class="image-slider">
+					    <ul class="rslides" id="slider1">
+					      <li><img src="./img/1a.jpg" alt=""></li>
+					      <li><img src="./img/2a.jpg" alt=""></li>
+					      <li><img src="./img/3a.jpg" alt=""></li>
+					       <li><img src="./img/4a.jpg" alt=""></li>
+						   <li><img src="./img/5a.jpg" alt=""></li>
+					</div>
+			<!--End-image-slider---->	
+		<br> 
+			<br> 
+				<br> 
+					<br> 
+ <div class="main">
+  	<div class="wrap">
+      <div class="content">
+    	<div class="content_top">
+    		<div class="heading">
+    		<h3>New Products</h3>
+    		</div>
+    	</div>
+	     	<div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+				<div class="newprice">
+			<div  id="pricenow" style="text-align:center; font-size:2em; color:#fff;">RIKEN MAYSTORM2 - B2 205/55R16 91V</div>
+				</div>
+			<div class="grid1" data-toggle="modal" data-target="#Imgmodal">
+				<img src="./tyres/tp0big.jpg" alt=""/>
+
+					 </div>
+					</div>
+						<div class="buybutton" style="align:right;" id="buytext">Buy Now</div>
+				</div>
+				
+	     	<div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+				<div class="newprice">
+								<div  id="pricenow" style="text-align:center; font-size:2em; color:#fff;">RIKEN MAYSTORM2 - B2 205/55R16 91V</div>
+					    </div>
+					<div class="grid1" data-toggle="modal" data-target="#Imgmodal2">
+						<img src="./tyres/tpcar (12).jpg" alt=""/>
+				
+					 </div>
+					</div>
+						<div class="buybutton" style="align:right;" id="buytext">Buy Now</div>
+				</div>
+				<br>
+	     	<div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+				<div class="newprice">
+								<div  id="pricenow" style="text-align:center; font-size:2em; color:#fff;">RIKEN MAYSTORM2 - B2 205/55R16 91V</div>
+					    </div>
+					<div class="grid1" data-toggle="modal" data-target="#Imgmodal3">
+						<img src="./tyres/tpcar (14).jpg" alt=""/>
+				
+					
+					 </div>
+					</div>
+						<div class="buybutton" style="align:right;" id="buytext">Buy Now</div>
+				</div>
+				<br>
+				<br>
+			     	<div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+				<div class="newprice">
+								<div  id="pricenow" style="text-align:center; font-size:2em; color:#fff;">RIKEN MAYSTORM2 - B2 205/55R16 91V</div>
+					    </div>
+					<div class="grid1" data-toggle="modal" data-target="#Imgmodal4">
+						<img src="./tyres/tpcar (16).jpg" alt=""/>
+				
+					 
+					 </div>
+					</div>
+						<div class="buybutton" style="align:right;" id="buytext">Buy Now</div>
+				</div>
+			
+				<div class="clear"></div>
+			</div>
+			    <div class="clear"></div>
+			 		     	<div class="section group" >
+				<div class="col_1_of_4 span_1_of_4">
+				<div class="newprice">
+								<div  id="pricenow" style="text-align:center; font-size:2em; color:#fff;">RIKEN MAYSTORM2 - B2 205/55R16 91V</div>
+					    </div>
+					<div class="grid1" data-toggle="modal" data-target="#Imgmodal5">
+						<img src="./tyres/tpcar (19).jpg" alt=""/>
+				
+					 
+					 </div>
+					</div>
+						<div class="buybutton" style="align:right;" id="buytext">Buy Now</div>
+				</div>
+				<br>
+				<br>
+				     	<div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+				<div class="newprice">
+								<div  id="pricenow" style="text-align:center; font-size:2em; color:#fff;">RIKEN MAYSTORM2 - B2 205/55R16 91V</div>
+					    </div>
+					<div class="grid1" data-toggle="modal" data-target="#Imgmodal6">
+						<img src="./tyres/tpcar (20).jpg" alt=""/>
+				
+					 
+					 </div>
+					</div>
+						<div class="buybutton" style="align:right;" id="buytext">Buy Now</div>
+				</div>
+				<br>
+				<br>
+	
+				<br>
+				<br>
+				<div class="clear"></div>
+			</div>
+       <div class="clear"></div>
+				<div class="clear"></div>
+			</div>	
+       </div>
+  </div>
+</div>
+
+ <div class="footer">
+			<div class="wrap">
+		      <div class="clear"></div>
+		</div>	
+	  </div>
+     <div class="copy-right">
+			<div class="wrap">
+			     <p>Company Name &copy; All Rights Reseverd | Design by  <a href="http://w3layouts.com">AJ</a></p>
+		      <div class="clear"></div>
+		</div>	
+	</div>
+ 
+
+      
+    </body>
+</html>

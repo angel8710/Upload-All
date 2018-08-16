@@ -1,0 +1,801 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Practice for Web</title>
+<head>
+<link type="text/css" rel="stylesheet" href="style/css.css"  />
+<script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/testvane.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/calc.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <style>
+	body{
+	
+	background:url('./images/banner5.jpg');
+}
+	
+	</style>	
+	</head>
+<!--
+function validateform()
+{
+if((document.orderForm.Name.value == "") ||
+   (document.orderForm.Email.value == "")||
+   (document.orderForm.Phone.value == "")||
+   (document.orderForm.City.value == "")||
+   (document.orderForm.State.value == "")||
+   (document.orderForm.Address.value == "")||
+   (document.orderForm.Subject.value == ""))
+{
+window.alert(" Please complete the fields to continue!")
+return false;
+    }
+}
+
+</script>-->
+
+<form id="calc">
+<table border = 0; cellspacing = 0; cellpadding = 0 width="500"; height="500" align="center"/>
+<tr>
+      <td>
+	     <ul class="calc">
+		    <input type="text" class="display" name="input" readonly="readonly" name="calc_result" id="calc_result" class="calc_result" onkeydown="javascript:key_detect_calc('calc',event);">
+			<div id="first">
+		    <ul class="row1">
+			<input type="button" name="clear" class="clear" value= " C " OnClick="calc.input.value = ''">
+			<input type="button" name="clear" class="clear" value= " M " OnClick="calc.input.value = ''">
+			<input type="button" name="clear" class="clear" value= " E "  OnClick="calc.input.value = ''">
+			<input type="button" name="divide" class="divide" value= " / " OnClick="calc.input.value += '/'">
+             </ul>
+			
+			 
+			 <ul class="row2">
+			<input type="button" name="seven" class="seven" value= " 7 " OnClick="calc.input.value += '7'">
+			<input type="button" name="eight" class="eight" value= " 8 " OnClick="calc.input.value += '8'">
+			<input type="button" name="nine" class="nine" value= " 9 " OnClick="calc.input.value += '9'">
+			<input type="button" name="minus" class="minus" value= " - " OnClick="calc.input.value += '-'">
+			
+             </ul>
+			 
+			 <ul class="row3">
+			<input type="button" name="four" class="four" value= " 4 " OnClick="calc.input.value += '4'">
+			<input type="button" name="five" class="five" value= " 5 " OnClick="calc.input.value += '5'">
+			<input type="button" name="six" class="six" value= " 6 " OnClick="calc.input.value += '6'">
+			<input type="button" name="multiply" class="multiply" value= " x " OnClick="calc.input.value += '*'">
+			
+             </ul>
+			 
+			 <ul class="row4">
+			<input type="button" name="one" class="one" value= " 1 " OnClick="calc.input.value += '1'">
+			<input type="button" name="two" class="two" value= " 2 " OnClick="calc.input.value += '2'">
+			<input type="button" name="three" class="three" value= " 3 " OnClick="calc.input.value += '3'">
+			<input type="button" name="plus" class="plus" value= " + " OnClick="calc.input.value += '+'">
+			
+             </ul>
+			 
+			  <ul class="row5">
+			
+			<input type="button" name="zero" class="zero" value= " 0 " OnClick="calc.input.value += '0'">
+			<input type="button" name="percent" class="percent" value= " % " OnClick="calc.input.value += '%'">
+			<input type="button" name="dot" class="dot" value= " . " OnClick="calc.input.value += '.'">
+			<input type="button" name="even" class="even" value= " = " OnClick="calc.input.value = eval(calc.input.value)">
+					
+                                               </ul>
+			                         </div>
+			                    </ul>	 		 
+                          </td>
+                     </tr>
+         </table>
+</form>
+<script type="text/javascript">
+                document.getElementById('calc').onload=init_calc('calc');
+        </script>
+
+<!--
+<table id="customers">
+<tbody>
+<tr>
+  <th>Company</th>
+  <th>Contact</th>
+  <th>Country</th>
+  <th>Price</th>
+  <th>Select</th>
+</tr>
+<tr>
+<td>Alfreds Futterkiste</td>
+<td>Maria Anders</td>
+<td>Germany</td>
+<td>$123.45</td>
+<td id="c"> <input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr class="alt">
+<td>Berglunds snabbköp</td>
+<td>Christina Berglund</td>
+<td>Sweden</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr>
+<td>Centro comercial Moctezuma</td>
+<td>Francisco Chang</td>
+<td>Mexico</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr class="alt">
+<td>Ernst Handel</td>
+<td>Roland Mendel</td>
+<td>Austria</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr>
+<td>Island Trading</td>
+<td>Helen Bennett</td>
+<td>UK</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr class="alt">
+<td>Königlich Essen</td>
+<td>Philip Cramer</td>
+<td>Germany</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr>
+<td>Laughing Bacchus Winecellars</td>
+<td>Yoshi Tannamuri</td>
+<td>Canada</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr class="alt">
+<td>Magazzini Alimentari Riuniti</td>
+<td>Giovanni Rovelli</td>
+<td>Italy</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr>
+<td>North/South</td>
+<td>Simon Crowther</td>
+<td>UK</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr class="alt">
+<td>Paris spécialités</td>
+<td>Marie Bertrand</td>
+<td>France</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr>
+<td>The Big Cheese</td>
+<td>Liz Nixon</td>
+<td>USA</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+<tr class="alt">
+<td>Vaffeljernet</td>
+<td>Palle Ibsen</td>
+<td>Denmark</td>
+<td>$123.45</td>
+<td id="c"><input type="checkbox" name="chkbox" class="check" id="check"/></td>
+</tr>
+
+</tbody></table>
+
+<p>
+<input type="button" class = "button" value="Add New Customer" onclick="customers();" />
+<input type="button" class = "button" value="Delete Customer" onclick="customersDelete();" />
+
+</p>
+
+-->
+
+<!--
+<script>
+function Validate()
+{
+    var name = document.ContactForm.name;
+    var email = document.ContactForm.email;
+    var phone = document.ContactForm.phone;
+	var city = document.ContactForm.city;
+	var state = document.ContactForm.state;
+    var location = document.ContactForm.location;
+    var address = document.ContactForm.address;
+    var nocall = document.ContactForm.DoNotCall;
+    var subject = document.ContactForm.subject;
+    var comment = document.ContactForm.Comment;
+	
+
+	
+	
+    if (name.value == "")
+    {
+        window.alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+    
+    if (email.value == "")
+    {  
+	  
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf("@", 0) < 0)
+    {
+	  
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf(".", 0) < 0)
+    { 
+	    
+        window.alert("Please enter e-mail address.");
+        email.focus();
+        return false;
+    }
+
+    if ((nocall.checked == false) && (phone.value == ""))
+    {
+        window.alert("Please enter your phone number.");
+        phone.focus();
+        return false;
+    }
+	
+	
+    if(city.value=="")
+	{
+	   window.alert("Please enter City!");
+	   city.focus();
+	   return false;
+	}
+	
+	if(state.value=="")
+	{
+	    window.alert("Please type your state");
+	    state.focus();
+	    return false;
+	}
+	
+	if(bday.value=="")
+	{
+	window.alert("Select Date Month Year!");
+	bday.focus();
+	return false;
+	}
+	
+	if(location.value=='')
+	{
+	window.alert("Type Location");
+	location.focus();
+	return false;
+	}
+	
+	if(address.value=='')
+	{
+	window.alert("Type address in the box");
+	address.focus();
+	return false;
+	}
+	
+	if(subject.value=="")
+	{
+	window.alert("Type Subject");
+	subject.focus();
+	return false;
+	
+	}
+
+ 
+    return true;
+}
+
+function EnableDisable(chkbx)
+{
+    if(chkbx.checked == true)
+    {
+        document.ContactForm.phone.disabled = true;
+    }
+    else
+    {
+        document.ContactForm.phone.disabled = false;
+    }
+}
+
+
+</script>
+-->
+
+<!--
+<script language="JavaScript" type="text/JavaScript">
+function validate()
+<!--
+{
+ if(document.theForm.name.value=="")
+ {
+  window.alert("fill name");
+  document.theForm.name.focus();
+  return false;
+ }
+ if(document.theForm.email.value=="")
+ {
+  alert("fill email");
+  document.theform.email.focus();
+  return false;
+ }
+ if(document.theForm.phone.value=="")
+ {
+  alert("fill phone numner format");
+  document.theForm.phone.focus();
+  return false;
+ }
+ if(document.theForm.city.value=="")
+ {
+  alert("fill city numner");
+  document.theForm.city.focus();
+  return false;
+ }
+ if(document.theForm.state.value=="")
+ {
+  alert("fill state numner");
+  document.theForm.state.focus();
+  return false;
+ }
+ if(document.theForm.address.value=="")
+ {
+  alert("fill address numner");
+  document.theForm.address.focus();
+  return false;
+ }
+ 
+ return true;
+  }
+
+//>
+</script>
+-->
+
+
+<script type="text/javascript">
+<!--
+function qualify()
+{
+var age = 15;
+
+if(age > 18){
+document.write("<b>You are Qualified</b>");
+
+}else {
+window.alert("I'm sorry you are under 18 years old you can't be qualified!");
+document.write("<b>I'm sorry you are under 18 years old you can't be qualified!!!</b>");
+
+}
+ }
+//>
+</script>
+
+
+
+
+<script type="text/javascript">
+function concatenate(first, last)
+  {
+var full;
+full = first + last;
+return full;
+
+  }
+  
+  function secondFunction()
+  {
+  
+  var result;
+  result = concatenate('Zhe','liazkov');
+  alert (result);
+  }
+</script>
+
+
+<script type="text/javascript">
+<!--
+var daysArray = new Array(
+"Monday","Tuesday","Wednesday","Thursday","Friday","Saturaday","Sunday"
+);
+//-->
+</script>
+
+
+
+</head>
+<body >
+
+
+
+
+
+
+
+<!--
+<table class="form_background" align="left" width="510" border="0" cellpadding="4" cellspacing="6">
+            <tbody><tr>
+		   
+		  
+			<form name="theForm" onSubmit="JavaScript: return (validate());"> 
+			<form method="post" action="mailto:kondenz@abv.bg" name="ContactForm" onsubmit="return Validate();">
+
+			  <td width="100" height="45" align="left"><label for="name"><span class="text">Name:<span class="star_red">*</span></span></label></td>
+			  <td width="360" align="left"><input type="text" name="name" id="name" placeholder="Your Name" class="form"  size="60"></td>
+			 
+              </tr>
+            <tr>
+              <td height="48" align="left"><label for="email"><span class="text">Email:<span class="star_red">*</span></span></label></td>
+              <td><input name="email" type="text" class="form" id="email" placeholder="Your Email"   size="60"></td>
+              </tr>
+            <tr>
+              <td height="49" align="left"><label for="phone"><span class="text">Phone:<span class="star_red">*</span></span></label></td>
+              <td><input name="phone" type="text" class="form" id="phone"  pattern="+[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}\-[0-9]{2}" placeholder="+359-888-88-88-88" size="60"></td>
+              </tr>
+			  <tr>
+			   <td height="49" align="left"><span class="text">Do not call me.</p></span></td>
+			 <td><input type="checkbox" name="DoNotCall" class="form" onclick="EnableDisable(this);"></td>
+			  </tr>
+			 <tr>
+			 <td height="49"align="left"><label for="city"><span class="text">City:<span class="star_red">*</span></span></label></td>
+			 <td><input type="text" name="city" id="city"  class="form" placeholder="City"></td>
+			 <td height="49"align="left" ><label for="state" ><span class="text" style="margin-left:-277px;">State:<span class="star_red">*</span></span></label></td>
+			 <td><input type="text" name="state" id="state" style="margin-left:-227px;"  class="form" placeholder="State"></td>
+			 </tr>
+			 <tr>
+			 <td height="50" align="left"><label for="birthday"><span class="text">Birthday:<span class="star_red">*</span></span></label></td>
+			 <td><input style="width:95%;"  class="form" aria-required="true" class="required" aria-describedby="bday-format" type="date" name="bday" id="bday" size="60">
+			 </td>
+			 </tr>
+			 <tr>
+			 <td height="50" align="left"><label for="location"><span class="text">Location:<span class="star_red">*</span></span></label></td>
+			 <td ><select id="location" style="width:99%;" class="form" type="location" name="location">
+      <option value="AF"> Afghanistan (‫افغانستان‬‎) </option>
+      <option value="AX"> Åland Islands </option>
+      <option value="AL"> Albania (Shqipëria) </option>
+      <option value="DZ"> Algeria (‫الجزائر‬‎) </option>
+      <option value="AS"> American Samoa </option>
+      <option value="AD"> Andorra </option>
+      <option value="AO"> Angola </option>
+      <option value="AI"> Anguilla </option>
+      <option value="AQ"> Antarctica </option>
+      <option value="AG"> Antigua and Barbuda </option>
+      <option value="AR"> Argentina </option>
+      <option value="AM"> Armenia (Հայաստան) </option>
+      <option value="AW"> Aruba </option>
+      <option value="AU"> Australia </option>
+      <option value="AT"> Austria (Österreich) </option>
+      <option value="AZ"> Azerbaijan (Azərbaycan) </option>
+      <option value="BS"> Bahamas </option>
+      <option value="BH"> Bahrain (‫البحرين‬‎) </option>
+      <option value="BD"> Bangladesh (বাংলাদেশ) </option>
+      <option value="BB"> Barbados </option>
+      <option value="BY"> Belarus (Белару́сь) </option>
+      <option value="BE"> Belgium (België) </option>
+      <option value="BZ"> Belize </option>
+      <option value="BJ"> Benin (Bénin) </option>
+      <option value="BM"> Bermuda </option>
+      <option value="BT"> Bhutan (འབྲུག་ཡུལ) </option>
+      <option value="BO"> Bolivia </option>
+      <option value="BA"> Bosnia and Herzegovina (Bosna i Hercegovina) </option>
+      <option value="BW"> Botswana </option>
+      <option value="BV"> Bouvet Island </option>
+      <option value="BR"> Brazil (Brasil) </option>
+      <option value="IO"> British Indian Ocean Territory </option>
+      <option value="VG"> British Virgin Islands </option>
+      <option value="BN"> Brunei (Brunei Darussalam) </option>
+      <option value="BG"> Bulgaria (България) </option>
+      <option value="BF"> Burkina Faso </option>
+      <option value="BI"> Burundi (Uburundi) </option>
+      <option value="KH"> Cambodia (Kampuchea) </option>
+      <option value="CM"> Cameroon (Cameroun) </option>
+      <option value="CA"> Canada </option>
+      <option value="CV"> Cape Verde (Cabo Verde) </option>
+      <option value="KY"> Cayman Islands </option>
+      <option value="CF"> Central African Republic (République Centrafricaine) </option>
+      <option value="TD"> Chad (Tchad) </option>
+      <option value="CL"> Chile </option>
+      <option value="CN"> China (中国) </option>
+      <option value="CX"> Christmas Island </option>
+      <option value="CC"> Cocos [Keeling] Islands </option>
+      <option value="CO"> Colombia </option>
+      <option value="KM"> Comoros (Comores) </option>
+      <option value="CD"> Congo [DRC] </option>
+      <option value="CG"> Congo [Republic] </option>
+      <option value="CK"> Cook Islands </option>
+      <option value="CR"> Costa Rica </option>
+      <option value="CI"> Côte d’Ivoire </option>
+      <option value="HR"> Croatia (Hrvatska) </option>
+      <option value="CU"> Cuba </option>
+      <option value="CY"> Cyprus (Κυπρος) </option>
+      <option value="CZ"> Czech Republic (Česko) </option>
+      <option value="DK"> Denmark (Danmark) </option>
+      <option value="DJ"> Djibouti </option>
+      <option value="DM"> Dominica </option>
+      <option value="DO"> Dominican Republic </option>
+      <option value="EC"> Ecuador </option>
+      <option value="EG"> Egypt (‫مصر‬‎) </option>
+      <option value="SV"> El Salvador </option>
+      <option value="GQ"> Equatorial Guinea (Guinea Ecuatorial) </option>
+      <option value="ER"> Eritrea (Ertra) </option>
+      <option value="EE"> Estonia (Eesti) </option>
+      <option value="ET"> Ethiopia (Ityop'iya) </option>
+      <option value="FK"> Falkland Islands [Islas Malvinas] </option>
+      <option value="FO"> Faroe Islands </option>
+      <option value="FJ"> Fiji </option>
+      <option value="FI"> Finland (Suomi) </option>
+      <option value="FR"> France </option>
+      <option value="GF"> French Guiana </option>
+      <option value="PF"> French Polynesia </option>
+      <option value="TF"> French Southern Territories </option>
+      <option value="GA"> Gabon </option>
+      <option value="GM"> Gambia </option>
+      <option value="GE"> Georgia (საქართველო) </option>
+      <option value="DE"> Germany (Deutschland) </option>
+      <option value="GH"> Ghana </option>
+      <option value="GI"> Gibraltar </option>
+      <option value="GR"> Greece (Ελλάς) </option>
+      <option value="GL"> Greenland </option>
+      <option value="GD"> Grenada </option>
+      <option value="GP"> Guadeloupe </option>
+      <option value="GU"> Guam </option>
+      <option value="GT"> Guatemala </option>
+      <option value="GG"> Guernsey </option>
+      <option value="GN"> Guinea (Guinée) </option>
+      <option value="GW"> Guinea-Bissau (Guiné-Bissau) </option>
+      <option value="GY"> Guyana </option>
+      <option value="HT"> Haiti (Haïti) </option>
+      <option value="HM"> Heard Island and McDonald Islands </option>
+      <option value="HN"> Honduras </option>
+      <option value="HK"> Hong Kong </option>
+      <option value="HU"> Hungary (Magyarország) </option>
+      <option value="IS"> Iceland (Ísland) </option>
+      <option value="IN"> India </option>
+      <option value="ID"> Indonesia </option>
+      <option value="IR"> Iran (‫ایران‬‎) </option>
+      <option value="IQ"> Iraq (‫العراق‬‎) </option>
+      <option value="IE"> Ireland </option>
+      <option value="IM"> Isle of Man </option>
+      <option value="IL"> Israel (‫ישראל‬‎) </option>
+      <option value="IT"> Italy (Italia) </option>
+      <option value="JM"> Jamaica </option>
+      <option value="JP"> Japan (日本) </option>
+      <option value="JE"> Jersey </option>
+      <option value="JO"> Jordan (‫الاردن‬‎) </option>
+      <option value="KZ"> Kazakhstan (Қазақстан) </option>
+      <option value="KE"> Kenya </option>
+      <option value="KI"> Kiribati </option>
+      <option value="KW"> Kuwait (‫الكويت‬‎) </option>
+      <option value="KG"> Kyrgyzstan (Кыргызстан) </option>
+      <option value="LA"> Laos (ນລາວ) </option>
+      <option value="LV"> Latvia (Latvija) </option>
+      <option value="LB"> Lebanon (‫لبنان‬‎) </option>
+      <option value="LS"> Lesotho </option>
+      <option value="LR"> Liberia </option>
+      <option value="LY"> Libya (‫ليبيا‬‎) </option>
+      <option value="LI"> Liechtenstein </option>
+      <option value="LT"> Lithuania (Lietuva) </option>
+      <option value="LU"> Luxembourg (Lëtzebuerg) </option>
+      <option value="MO"> Macau </option>
+      <option value="MK"> Macedonia [FYROM] (Македонија) </option>
+      <option value="MG"> Madagascar (Madagasikara) </option>
+      <option value="MW"> Malawi </option>
+      <option value="MY"> Malaysia </option>
+      <option value="MV"> Maldives (‫ގުޖޭއްރާ ޔާއްރިހޫމްޖ‬‎) </option>
+      <option value="ML"> Mali </option>
+      <option value="MT"> Malta </option>
+      <option value="MH"> Marshall Islands </option>
+      <option value="MQ"> Martinique </option>
+      <option value="MR"> Mauritania (‫موريتانيا‬‎) </option>
+      <option value="MU"> Mauritius </option>
+      <option value="YT"> Mayotte </option>
+      <option value="MX"> Mexico (México) </option>
+      <option value="FM"> Micronesia </option>
+      <option value="MD"> Moldova </option>
+      <option value="MC"> Monaco </option>
+      <option value="MN"> Mongolia (Монгол Улс) </option>
+      <option value="ME"> Montenegro (Црна Гора) </option>
+      <option value="MS"> Montserrat </option>
+      <option value="MA"> Morocco (‫المغرب‬‎) </option>
+      <option value="MZ"> Mozambique (Moçambique) </option>
+      <option value="MM"> Myanmar [Burma] (Myanmar (Burma)) </option>
+      <option value="NA"> Namibia </option>
+      <option value="NR"> Nauru (Naoero) </option>
+      <option value="NP"> Nepal (नेपाल) </option>
+      <option value="NL"> Netherlands (Nederland) </option>
+      <option value="AN"> Netherlands Antilles </option>
+      <option value="NC"> New Caledonia </option>
+      <option value="NZ"> New Zealand </option>
+      <option value="NI"> Nicaragua </option>
+      <option value="NE"> Niger </option>
+      <option value="NG"> Nigeria </option>
+      <option value="NU"> Niue </option>
+      <option value="NF"> Norfolk Island </option>
+      <option value="MP"> Northern Mariana Islands </option>
+      <option value="KP"> North Korea (조선) </option>
+      <option value="NO"> Norway (Norge) </option>
+      <option value="OM"> Oman (‫عمان‬‎) </option>
+      <option value="PK"> Pakistan (‫پاکستان‬‎) </option>
+      <option value="PW"> Palau (Belau) </option>
+      <option value="PS"> Palestinian Territories </option>
+      <option value="PA"> Panama (Panamá) </option>
+      <option value="PG"> Papua New Guinea </option>
+      <option value="PY"> Paraguay </option>
+      <option value="PE"> Peru (Perú) </option>
+      <option value="PH"> Philippines (Pilipinas) </option>
+      <option value="PN"> Pitcairn Islands </option>
+      <option value="PL"> Poland (Polska) </option>
+      <option value="PT"> Portugal </option>
+      <option value="PR"> Puerto Rico </option>
+      <option value="QA"> Qatar (‫قطر‬‎) </option>
+      <option value="RE"> Réunion </option>
+      <option value="RO"> Romania (România) </option>
+      <option value="RU"> Russia (Россия) </option>
+      <option value="RW"> Rwanda </option>
+      <option value="SH"> Saint Helena </option>
+      <option value="KN"> Saint Kitts and Nevis </option>
+      <option value="LC"> Saint Lucia </option>
+      <option value="PM"> Saint Pierre and Miquelon </option>
+      <option value="VC"> Saint Vincent and the Grenadines </option>
+      <option value="WS"> Samoa </option>
+      <option value="SM"> San Marino </option>
+      <option value="ST"> São Tomé and Príncipe </option>
+      <option value="SA"> Saudi Arabia (‫المملكة العربية السعودية‬‎) </option>
+      <option value="SN"> Senegal (Sénégal) </option>
+      <option value="RS"> Serbia (Србија) </option>
+      <option value="CS"> Serbia and Montenegro (Србија и Црна Гора) </option>
+      <option value="SC"> Seychelles </option>
+      <option value="SL"> Sierra Leone </option>
+      <option value="SG"> Singapore (Singapura) </option>
+      <option value="SK"> Slovakia (Slovensko) </option>
+      <option value="SI"> Slovenia (Slovenija) </option>
+      <option value="SB"> Solomon Islands </option>
+      <option value="SO"> Somalia (Soomaaliya) </option>
+      <option value="ZA"> South Africa </option>
+      <option value="GS"> South Georgia and the South Sandwich Islands </option>
+      <option value="KR"> South Korea (한국) </option>
+      <option value="ES"> Spain (España) </option>
+      <option value="LK"> Sri Lanka </option>
+      <option value="SD"> Sudan (‫السودان‬‎) </option>
+      <option value="SR"> Suriname </option>
+      <option value="SJ"> Svalbard and Jan Mayen </option>
+      <option value="SZ"> Swaziland </option>
+      <option value="SE"> Sweden (Sverige) </option>
+      <option value="CH"> Switzerland (Schweiz) </option>
+      <option value="SY"> Syria (‫سوريا‬‎) </option>
+      <option value="TW"> Taiwan (台灣) </option>
+      <option value="TJ"> Tajikistan (Тоҷикистон) </option>
+      <option value="TZ"> Tanzania </option>
+      <option value="TH"> Thailand (ราชอาณาจักรไทย) </option>
+      <option value="TL"> Timor-Leste </option>
+      <option value="TG"> Togo </option>
+      <option value="TK"> Tokelau </option>
+      <option value="TO"> Tonga </option>
+      <option value="TT"> Trinidad and Tobago </option>
+      <option value="TN"> Tunisia (‫تونس‬‎) </option>
+      <option value="TR"> Turkey (Türkiye) </option>
+      <option value="TM"> Turkmenistan (Türkmenistan) </option>
+      <option value="TC"> Turks and Caicos Islands </option>
+      <option value="TV"> Tuvalu </option>
+      <option value="UM"> U.S. Minor Outlying Islands </option>
+      <option value="VI"> U.S. Virgin Islands </option>
+      <option value="UG"> Uganda </option>
+      <option value="UA"> Ukraine (Україна) </option>
+      <option value="AE"> United Arab Emirates (‫الإمارات العربيّة المتّحدة‬‎) </option>
+      <option value="GB"> United Kingdom </option>
+      <option value="US" selected> United States </option>
+      <option value="UY"> Uruguay </option>
+      <option value="UZ"> Uzbekistan (O'zbekiston) </option>
+      <option value="VU"> Vanuatu </option>
+      <option value="VA"> Vatican City (Città del Vaticano) </option>
+      <option value="VE"> Venezuela </option>
+      <option value="VN"> Vietnam (Việt Nam) </option>
+      <option value="WF"> Wallis and Futuna </option>
+      <option value="EH"> Western Sahara (‫الصحراء الغربية‬‎) </option>
+      <option value="YE"> Yemen (‫اليمن‬‎) </option>
+      <option value="ZM"> Zambia </option>
+      <option value="ZW"> Zimbabwe </option>
+    </select>
+  </p>
+
+			 </td>
+			 </tr>
+			   <tr>
+			    <td height="56" align="left"><label for="subject"><span class="text">Address:<span class="star_red">*</span></span></label></td>
+                 <td><textarea name="address" cols="49" rows="5" class="form" id="address"></textarea></td>
+			  </tr>
+            <tr>
+              <td height="56" align="left"><label for="subject"><span class="text">Subject:<span class="star_red">*<span></span></label></td>
+              <td><input name="subject" type="subject" class="form" id="subject"placeholder="Your Subject" size="60"></td>
+              </tr>
+            <tr>
+              <td colspan="2"><textarea name="text" style="width:550px;" cols="93" rows="14" class="form" id="text"></textarea></td>
+              </tr>
+            <tr>
+              <td colspan="2" align="center"><br>
+                <br><input type="submit" name="submit" value="Send Form" class="button">
+				<input type="reset"  value="Clear Form" class="button">
+                <br>
+                <br>
+                <br></td>
+              </tr>
+            </tbody></table></form>
+
+
+
+
+<p><b><font color="red" class="text">Please click that button to Qualify!</b></font></p>
+<form>
+<label for="age"><span class="text">Your Age:<span class="star_red">*</span></span></label>
+<input type="text" class="form" name="age"  id="age" placeholder="Please type your age!" size="60">
+<input type="button" class="button"  onClick="qualify()" value="Press Qualify!">
+</form>
+
+
+<input type="button" name="function"id="function"class="button"onClick="secondFunction()"value="Click Concatenate">
+<form>
+
+</form>
+</br>
+</br>
+-->
+</br>
+</br>
+<!--
+<script type="text/javascript">
+var count = 0;
+document.write("Starting Loop"+"</br>");
+do{
+document.write("Current count:" + count +"</br>");
+count++;
+}while(count < 10);
+document.write("Loop Stopped");
+
+</script>
+
+<a onClick = "toto()">Start</a>
+	
+-->
+	
+	
+	
+<script language="JavaScript">
+<!--
+var myString = "";
+
+{
+document.write(myString.slice(7,22)+"</br>" );
+}
+big,blink,link,push,pop,slice,fontcolor,small,split//-->
+</script>
+
+</br>
+
+<script language="JavaScript">
+
+var myString = "!";
+var myString = myString.split(",");
+
+for(i = 0;i < myString.length;i++){
+
+document.write(myString[i] + "</br>");
+}
+</script>
+
+
+
+
+</body>
+
+</html>
